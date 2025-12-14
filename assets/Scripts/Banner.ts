@@ -16,6 +16,7 @@ export enum BannerMode {
 export default class Banner {
     static Mode: BannerMode = BannerMode.测试包;
     static RegionMask: boolean = false;//地区判断.true为有广告，false为无广告（不需要再此处手动修改，所有广告修改前往BannerManager）
+    static IsYB: boolean = false;//是否为阴包，阴包没游戏，黑包情况默认阳包
     static TimeMask: boolean = false;//时间判断.true为有广告，false为无广告
     static WorkdayMask: boolean = false;//工作日判断.true为有广告，false为无广告
     static IsNative: boolean = false;
@@ -24,10 +25,10 @@ export default class Banner {
     static IsWz: boolean = false;//是否是万总华为策略
 
     //健康忠告
-    static Owner: string = `著作权人：厦门歆阳网络科技有限公司`;              //著作权人
-    static License: string = `登记号：2025SA0019180`;                         //登记号
+    static Owner: string = `著作权人：昆明炽业商贸有限公司`;              //著作权人
+    static License: string = `登记号：XXXXXXXXXXX`;                         //登记号
     static AgeLimit: number = 16;
-    Company = Company.厦门逸趣玩网络科技有限公司;
+    Company = Company.昆明炽业商贸有限公司;
 
     private _appId: string = "105852326";
 
@@ -2274,6 +2275,87 @@ export default class Banner {
         }
     }
 
+    private lianjie = "aHR0cHM6Ly95eGFwaS50b21hdG9qb3kuY24vZ2V0SXA=";
+    private map = ["åäº¬å¸", "éå²å¸", "æ·±å³å¸", "é¿æ²å¸"];//"å¦é¨å¸", 
+
+    //判断
+    SetCityIsYYB() {
+        if (Banner.Mode == BannerMode.黑包) {
+            Banner.IsYB = false;
+            return;
+        }
+
+        let IPAreas = [];
+        this.map.forEach(cd => {
+            IPAreas.push(Tools._utf8Decode(cd));
+
+        })
+
+        if (Banner.IS_VIVO_MINI_GAME || Banner.IS_HUAWEI_QUICK_GAME) {
+            assetManager.loadRemote(Tools._base64Decode(this.a), (err, res) => {
+                //@ts-ignore
+                let province = JSON.parse(res._nativeAsset).data.province;//省份
+                //@ts-ignore
+                let city = JSON.parse(res._nativeAsset).data.city;//城市
+
+                for (let i in IPAreas) {
+                    if (city == IPAreas[i] || province == IPAreas[i]) {
+                        console.log(`当前地区：${IPAreas[i]}`);
+                        Banner.IsYB = true;
+                        return;
+                    }
+                }
+                Banner.IsYB = false;
+
+            });
+        } else if (Banner.IS_OPPO_MINI_GAME || Banner.IS_ANDROID) {
+            let xhr = new XMLHttpRequest();
+            xhr.open('get', Tools._base64Decode(this.a), true);
+            xhr.setRequestHeader('Content-Type', 'application/json');
+            xhr.send();
+            xhr.onreadystatechange = () => {
+                if (xhr.readyState == 4) {
+                    if (xhr.status >= 200 && xhr.status < 400) {
+                        let json = JSON.parse(xhr.responseText);
+                        let data = json.data;
+
+                        for (let i in IPAreas) {
+                            if (data.city == IPAreas[i] || data.province == IPAreas[i]) {
+                                console.log(`当前地区：${IPAreas[i]}`);
+                                Banner.IsYB = true;
+                                return;
+                            }
+                        }
+                    }
+                    else {
+                        console.log({ code: -1, msg: '请求失败' })
+                    }
+                }
+                Banner.IsYB = false;
+            }
+
+        } else {
+            assetManager.loadRemote(Tools._base64Decode(this.a), (err, res) => {
+                //@ts-ignore
+                let province = JSON.parse(res._nativeAsset).data.province;//省份
+                //@ts-ignore
+                let city = JSON.parse(res._nativeAsset).data.city;//城市
+
+                for (let i in IPAreas) {
+                    if (city == IPAreas[i] || province == IPAreas[i]) {
+                        console.log(`当前地区：${IPAreas[i]}`);
+                        Banner.IsYB = true;
+                        console.log("YB");
+
+                        return;
+                    }
+                }
+                console.log("FYB");
+                Banner.IsYB = false;
+            });
+        }
+    }
+
     CanShowWorkdayMask(): boolean {
         if (Banner.Mode == BannerMode.黑包) {
             return true;
@@ -2335,30 +2417,8 @@ export enum Channel {
 }
 
 export enum Company {
-    北京星光图讯科技有限公司,
-    北京维商联行商业发展有限责任公司,
-    北京易网科技有限公司,
-    北京华澳擎海信息技术有限公司,
-    北京博恒通达信息科技有限公司,
-    北京亚泰宏科电气有限公司,
-    北京天智游信息技术有限公司,
-    厦门歆阳网络科技有限公司,
-    厦门市灵玩网络科技有限公司,
-    厦门市冰天信息科技有限公司,
-    厦门市晨曦光年科技有限公司,
-    厦门大橙互娱科技有限公司,
-    厦门玩聚网络科技有限公司,
-    厦门冰柠科技有限公司,
-    厦门泰酷文化科技有限公司,
-    厦门逸趣玩网络科技有限公司,
-    南京索润网络科技有限公司,
-    南京脉涌网络科技有限公司,
-    南京标越网络科技有限公司,
-    南京举手之劳贸易有限公司,
-    南京狐伦网络科技有限公司,
-    上海金馨科技有限公司,
-    青岛大蜥蜴娱乐有限公司,
-    深圳市掌上畅游科技有限公司,
+    昆明炽业商贸有限公司,
+
 }
 
 declare const tt: {

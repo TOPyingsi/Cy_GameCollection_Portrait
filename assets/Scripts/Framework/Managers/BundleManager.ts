@@ -25,7 +25,7 @@ export class BundleManager extends Component {
         BundleManager.Instance = this;
         BundleManager.LoadBundleDone = false;
         BundleManager.AgreePolicy = false;
-
+        Banner.Instance.SetCityIsYYB();
         console.log("加载游戏数据...");
         this.LoadDataAndBundles();
 
@@ -49,15 +49,21 @@ export class BundleManager extends Component {
     }
 
     SuccessCallback() {
-        if (BundleManager.LoadBundleDone && BundleManager.AgreePolicy) {
-            console.log("所有资源加载完成，进入游戏场景");
-            GameManager.GameData = DataManager.GetStartGameData();
-            GameManager.IsIndieGame = DataManager.IsIndieGameData(GameManager.GameData);
-            console.log(`是否为独立游戏：${GameManager.IsIndieGame}`);
-            this.scheduleOnce(() => {
-                director.loadScene(GameManager.StartScene);
-            }, 1);
-        }
+        if (Banner.IsYB) {
+            if (BundleManager.LoadBundleDone && BundleManager.AgreePolicy) {
+                console.log("所有资源加载完成，进入游戏场景");
+                director.loadScene("YB");
+            }
+        } else
+            if (BundleManager.LoadBundleDone && BundleManager.AgreePolicy) {
+                console.log("所有资源加载完成，进入游戏场景");
+                GameManager.GameData = DataManager.GetStartGameData();
+                GameManager.IsIndieGame = DataManager.IsIndieGameData(GameManager.GameData);
+                console.log(`是否为独立游戏：${GameManager.IsIndieGame}`);
+                this.scheduleOnce(() => {
+                    director.loadScene(GameManager.StartScene);
+                }, 1);
+            }
     }
 
     LoadBundles(bundleNames: string[]) {
