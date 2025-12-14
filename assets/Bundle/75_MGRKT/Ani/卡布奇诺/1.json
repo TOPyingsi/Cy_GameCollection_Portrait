@@ -1,0 +1,74 @@
+{
+"skeleton": {
+	"hash": "Gq9uFY04imZy2/4IEFN/NPFPcDw",
+	"spine": "3.8.75",
+	"x": -397,
+	"y": -526.49,
+	"width": 794,
+	"height": 876.99,
+	"images": "./images/",
+	"audio": "C:/Users/admin/Desktop/山海经逃跑/咖啡动画"
+},
+"bones": [
+	{ "name": "root" },
+	{ "name": "bone2", "parent": "root", "x": 23.1, "y": -11.87 },
+	{ "name": "bone", "parent": "bone2", "x": 52.33, "y": 25.7 },
+	{ "name": "bone3", "parent": "bone2", "x": 19.28, "y": 212.98 },
+	{ "name": "bone4", "parent": "root", "x": 12.92, "y": -379.57 }
+],
+"slots": [
+	{ "name": "身体", "bone": "bone2", "attachment": "身体" },
+	{ "name": "st", "bone": "bone", "attachment": "变胖" },
+	{ "name": "云", "bone": "bone4", "attachment": "云" },
+	{ "name": "脸红", "bone": "bone3", "attachment": "脸红" }
+],
+"skins": [
+	{
+		"name": "default",
+		"attachments": {
+			"身体": {
+				"身体": { "x": -23.1, "y": 11.87, "width": 599, "height": 701 }
+			},
+			"云": {
+				"云": { "x": -12.92, "y": 37.08, "width": 794, "height": 368 }
+			},
+			"st": {
+				"变胖": { "x": -75.43, "y": -13.84, "width": 602, "height": 700 }
+			},
+			"脸红": {
+				"脸红": { "x": 7.4, "y": 1.46, "width": 201, "height": 69 }
+			}
+		}
+	}
+],
+"animations": {
+	"animation": {
+		"bones": {
+			"bone2": {
+				"translate": [
+					{ "y": -34.62 },
+					{ "time": 0.3333, "y": -11.36 },
+					{ "time": 0.6667, "y": -34.62 }
+				],
+				"scale": [
+					{},
+					{ "time": 0.3333, "x": 0.964, "y": 1.022 },
+					{ "time": 0.6667 }
+				]
+			},
+			"bone4": {
+				"translate": [
+					{ "y": -34.62 },
+					{ "time": 0.3333, "y": -11.36 },
+					{ "time": 0.6667, "y": -34.62 }
+				],
+				"scale": [
+					{},
+					{ "time": 0.3333, "x": 0.899, "y": 1.022 },
+					{ "time": 0.6667 }
+				]
+			}
+		}
+	}
+}
+}

@@ -1,0 +1,418 @@
+{
+"skeleton": {
+	"hash": "ktDpZv/KtIit28T7rz/cYdgHQKY",
+	"spine": "3.8.75",
+	"x": 10,
+	"y": -670,
+	"width": 665,
+	"height": 643,
+	"images": "C:\\Users\\admin\\Desktop\\山海经逃跑\\忍者动画\\images",
+	"audio": "C:/Users/admin/Desktop/山海经逃跑/忍者动画"
+},
+"bones": [
+	{ "name": "root" },
+	{ "name": "d", "parent": "root", "x": 380.74, "y": -278.08, "skin": true },
+	{ "name": "g", "parent": "root", "x": 431.57, "y": -340.67, "skin": true },
+	{ "name": "f", "parent": "root", "x": 373.75, "y": -397.61, "skin": true },
+	{ "name": "h", "parent": "root", "x": 297.54, "y": -393.23, "skin": true },
+	{ "name": "s", "parent": "root", "x": 262.5, "y": -331.03, "skin": true },
+	{ "name": "a", "parent": "root", "x": 314.18, "y": -260.08, "skin": true },
+	{ "name": "刀光1", "parent": "root", "x": 396.48, "y": -338.05, "skin": true },
+	{ "name": "刀光2", "parent": "root", "x": 308.29, "y": -336.12, "skin": true },
+	{ "name": "身体", "parent": "root", "x": 349.95, "y": -332.63 },
+	{ "name": "惊恐", "parent": "身体", "x": -5.51, "y": 178.55, "skin": true },
+	{ "name": "眼睛", "parent": "身体", "x": -6.26, "y": 138.59, "skin": true },
+	{ "name": "左手", "parent": "身体", "x": -189.73, "y": -71.96 },
+	{ "name": "右手", "parent": "身体", "x": 200.82, "y": -82 },
+	{ "name": "左脚", "parent": "身体", "x": -69.25, "y": -212.52 },
+	{ "name": "右脚", "parent": "身体", "x": 85.36, "y": -207.5 },
+	{ "name": "滑板", "parent": "root", "x": 358.01, "y": -578.28 },
+	{ "name": "弹孔", "parent": "身体", "x": -117.37, "y": 72.84, "skin": true },
+	{ "name": "西瓜", "parent": "root", "x": 343.43, "y": -112.29, "skin": true },
+	{ "name": "yj", "parent": "身体", "x": -8.52, "y": 284.2, "skin": true }
+],
+"slots": [
+	{ "name": "滑板", "bone": "滑板", "attachment": "滑板" },
+	{ "name": "左脚", "bone": "左脚", "attachment": "左脚" },
+	{ "name": "右脚", "bone": "右脚", "attachment": "右脚" },
+	{ "name": "右手", "bone": "右手", "attachment": "右手" },
+	{ "name": "左手", "bone": "左手", "attachment": "左手" },
+	{ "name": "身体", "bone": "身体", "attachment": "身体" },
+	{ "name": "弹孔", "bone": "弹孔", "attachment": "弹孔" },
+	{ "name": "眼睛", "bone": "眼睛", "attachment": "眼睛" },
+	{ "name": "惊恐", "bone": "惊恐", "attachment": "惊恐" },
+	{ "name": "刀光1", "bone": "刀光1", "attachment": "刀光1" },
+	{ "name": "刀光2", "bone": "刀光2", "attachment": "刀光2" },
+	{ "name": "yj", "bone": "yj", "attachment": "眼睛2" },
+	{ "name": "西瓜", "bone": "西瓜", "attachment": "西瓜" },
+	{ "name": "h", "bone": "h", "attachment": "h" },
+	{ "name": "g", "bone": "g", "attachment": "g" },
+	{ "name": "f", "bone": "f", "attachment": "f" },
+	{ "name": "d", "bone": "d", "attachment": "d" },
+	{ "name": "s", "bone": "s", "attachment": "s" },
+	{ "name": "a", "bone": "a", "attachment": "a" }
+],
+"skins": [
+	{
+		"name": "default",
+		"attachments": {
+			"惊恐": {
+				"惊恐": { "x": 19.55, "y": -149.92, "width": 234, "height": 170 }
+			},
+			"右脚": {
+				"右脚": { "x": 10.18, "y": 17.63, "width": 107, "height": 123 }
+			},
+			"身体": {
+				"身体": { "x": 36.55, "y": 73.63, "width": 423, "height": 464 }
+			},
+			"刀光2": {
+				"刀光2": { "x": -61.29, "y": 1.12, "width": 286, "height": 320 }
+			},
+			"滑板": {
+				"滑板": { "x": 1.99, "y": -20.22, "width": 630, "height": 143 }
+			},
+			"刀光1": {
+				"刀光1": { "x": 41.52, "y": 2.05, "width": 286, "height": 320 }
+			},
+			"yj": {
+				"眼睛2": { "x": 4.2, "y": -233.58, "width": 228, "height": 121 }
+			},
+			"眼睛": {
+				"眼睛": { "x": 1.31, "y": -88.46, "width": 230, "height": 123 }
+			},
+			"a": {
+				"a": { "x": -12.18, "y": -11.42, "width": 112, "height": 113 }
+			},
+			"d": {
+				"d": { "x": 13.26, "y": 3.08, "width": 108, "height": 118 }
+			},
+			"左手": {
+				"左手": { "x": -30.72, "y": 62.09, "width": 239, "height": 269 }
+			},
+			"f": {
+				"f": { "x": 16.25, "y": 8.11, "width": 130, "height": 125 }
+			},
+			"g": {
+				"g": { "x": -14.57, "y": -2.33, "width": 122, "height": 132 }
+			},
+			"h": {
+				"h": { "x": -0.54, "y": 9.23, "width": 124, "height": 128 }
+			},
+			"s": {
+				"s": { "x": 25.5, "y": 7.03, "width": 112, "height": 122 }
+			},
+			"左脚": {
+				"左脚": { "x": -17.2, "y": 23.15, "width": 115, "height": 130 }
+			},
+			"右手": {
+				"右手": { "x": 14.22, "y": 44.13, "width": 220, "height": 225 }
+			},
+			"弹孔": {
+				"弹孔": { "x": 109.92, "y": -62.21, "width": 271, "height": 184 }
+			},
+			"西瓜": {
+				"西瓜": { "x": 6.07, "y": -232.21, "width": 221, "height": 219 }
+			}
+		}
+	},
+	{
+		"name": "q",
+		"bones": [ "弹孔", "惊恐" ]
+	},
+	{
+		"name": "xg",
+		"bones": [ "a", "d", "f", "g", "h", "s", "yj", "刀光1", "刀光2", "西瓜" ]
+	},
+	{
+		"name": "yj",
+		"bones": [ "眼睛" ]
+	}
+],
+"events": {
+	"1": {}
+},
+"animations": {
+	"animation": {
+		"bones": {
+			"身体": {
+				"translate": [
+					{},
+					{ "time": 0.3333, "y": 35.16 },
+					{ "time": 0.6667 }
+				],
+				"scale": [
+					{},
+					{ "time": 0.3333, "y": 0.962 },
+					{ "time": 0.6667 }
+				]
+			},
+			"滑板": {
+				"translate": [
+					{},
+					{ "time": 0.3333, "y": 35.16 },
+					{ "time": 0.6667 }
+				],
+				"scale": [
+					{},
+					{ "time": 0.3333, "y": 0.962 },
+					{ "time": 0.6667 }
+				]
+			}
+		}
+	},
+	"q": {
+		"bones": {
+			"滑板": {
+				"translate": [
+					{},
+					{ "time": 0.3333, "y": 35.16 },
+					{ "time": 0.6667 }
+				],
+				"scale": [
+					{},
+					{ "time": 0.3333, "y": 0.962 },
+					{ "time": 0.6667 }
+				]
+			},
+			"身体": {
+				"translate": [
+					{},
+					{ "time": 0.3333, "y": 35.16 },
+					{ "time": 0.6667 }
+				],
+				"scale": [
+					{},
+					{ "time": 0.3333, "y": 0.962 },
+					{ "time": 0.6667 }
+				]
+			}
+		}
+	},
+	"xg": {
+		"slots": {
+			"g": {
+				"color": [
+					{ "color": "ffffff00", "curve": "stepped" },
+					{ "time": 0.6333, "color": "ffffff00" },
+					{ "time": 0.6667, "color": "ffffff5f" },
+					{ "time": 0.7667, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 0.9, "color": "ffffffff" },
+					{ "time": 1, "color": "ffffff00" }
+				]
+			},
+			"h": {
+				"color": [
+					{ "color": "ffffff00", "curve": "stepped" },
+					{ "time": 0.6333, "color": "ffffff00" },
+					{ "time": 0.6667, "color": "ffffff5f" },
+					{ "time": 0.7667, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 0.9, "color": "ffffffff" },
+					{ "time": 1, "color": "ffffff00" }
+				]
+			},
+			"西瓜": {
+				"color": [
+					{ "color": "ffffff00" },
+					{ "time": 0.0667, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 0.3333, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 0.5, "color": "ffffffff" },
+					{ "time": 0.6667, "color": "ffffff00" }
+				]
+			},
+			"刀光1": {
+				"color": [
+					{ "color": "ffffff00", "curve": "stepped" },
+					{ "time": 0.4667, "color": "ffffff00" },
+					{ "time": 0.5, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 0.6667, "color": "ffffffff" },
+					{ "time": 0.8333, "color": "ffffff00" }
+				]
+			},
+			"刀光2": {
+				"color": [
+					{ "color": "ffffff00", "curve": "stepped" },
+					{ "time": 0.4667, "color": "ffffff00" },
+					{ "time": 0.5, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 0.6667, "color": "ffffffff" },
+					{ "time": 0.8333, "color": "ffffff00" }
+				]
+			},
+			"a": {
+				"color": [
+					{ "color": "ffffff00", "curve": "stepped" },
+					{ "time": 0.6333, "color": "ffffff00" },
+					{ "time": 0.6667, "color": "ffffff5f" },
+					{ "time": 0.7667, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 0.9, "color": "ffffffff" },
+					{ "time": 1, "color": "ffffff00" }
+				]
+			},
+			"d": {
+				"color": [
+					{ "color": "ffffff00", "curve": "stepped" },
+					{ "time": 0.6333, "color": "ffffff00" },
+					{ "time": 0.6667, "color": "ffffff5f" },
+					{ "time": 0.7667, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 0.9, "color": "ffffffff" },
+					{ "time": 1, "color": "ffffff00" }
+				]
+			},
+			"f": {
+				"color": [
+					{ "color": "ffffff00", "curve": "stepped" },
+					{ "time": 0.6333, "color": "ffffff00" },
+					{ "time": 0.6667, "color": "ffffff5f" },
+					{ "time": 0.7667, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 0.9, "color": "ffffffff" },
+					{ "time": 1, "color": "ffffff00" }
+				]
+			},
+			"s": {
+				"color": [
+					{ "color": "ffffff00", "curve": "stepped" },
+					{ "time": 0.6333, "color": "ffffff00" },
+					{ "time": 0.6667, "color": "ffffff5f" },
+					{ "time": 0.7667, "color": "ffffffff", "curve": "stepped" },
+					{ "time": 0.9, "color": "ffffffff" },
+					{ "time": 1, "color": "ffffff00" }
+				]
+			}
+		},
+		"bones": {
+			"a": {
+				"translate": [
+					{ "time": 0.6667 },
+					{ "time": 1, "x": -65.97, "y": 168.94 }
+				]
+			},
+			"s": {
+				"translate": [
+					{ "time": 0.6667 },
+					{ "time": 1, "x": -180.21, "y": 77.23 }
+				]
+			},
+			"g": {
+				"translate": [
+					{ "time": 0.6667 },
+					{ "time": 1, "x": 194.25, "y": -33.56 }
+				]
+			},
+			"刀光1": {
+				"rotate": [
+					{ "time": 0.5 }
+				],
+				"translate": [
+					{ "time": 0.5 },
+					{ "time": 0.8333, "x": -311.75, "y": -124.49 }
+				],
+				"scale": [
+					{ "time": 0.5 }
+				]
+			},
+			"刀光2": {
+				"rotate": [
+					{ "time": 0.5 }
+				],
+				"translate": [
+					{ "time": 0.5 },
+					{ "time": 0.8333, "x": 304.8, "y": -113.13 }
+				],
+				"scale": [
+					{ "time": 0.5 }
+				]
+			},
+			"西瓜": {
+				"rotate": [
+					{}
+				],
+				"translate": [
+					{ "y": 691.65 },
+					{ "time": 0.3333, "y": 4.74 }
+				]
+			},
+			"h": {
+				"translate": [
+					{ "time": 0.6667 },
+					{ "time": 1, "x": -130.33, "y": -119.07 }
+				]
+			},
+			"f": {
+				"translate": [
+					{ "time": 0.6667 },
+					{ "time": 1, "x": 40.87, "y": -164.74 }
+				]
+			},
+			"d": {
+				"translate": [
+					{ "time": 0.6667 },
+					{ "time": 1, "x": 133.23, "y": 241.03 }
+				]
+			},
+			"滑板": {
+				"translate": [
+					{},
+					{ "time": 0.3333, "y": 35.16 },
+					{ "time": 0.6667 },
+					{ "time": 1, "y": 35.16 },
+					{ "time": 1.3333 },
+					{ "time": 1.6667, "y": 35.16 },
+					{ "time": 2 }
+				],
+				"scale": [
+					{},
+					{ "time": 0.3333, "y": 0.962 },
+					{ "time": 0.6667 },
+					{ "time": 1, "y": 0.962 },
+					{ "time": 1.3333 },
+					{ "time": 1.6667, "y": 0.962 },
+					{ "time": 2 }
+				]
+			},
+			"身体": {
+				"translate": [
+					{},
+					{ "time": 0.3333, "y": 35.16 },
+					{ "time": 0.6667 },
+					{ "time": 1, "y": 35.16 },
+					{ "time": 1.3333 },
+					{ "time": 1.6667, "y": 35.16 },
+					{ "time": 2 }
+				],
+				"scale": [
+					{},
+					{ "time": 0.3333, "y": 0.962 },
+					{ "time": 0.6667 },
+					{ "time": 1, "y": 0.962 },
+					{ "time": 1.3333 },
+					{ "time": 1.6667, "y": 0.962 },
+					{ "time": 2 }
+				]
+			},
+			"右手": {
+				"rotate": [
+					{ "time": 0.1667 },
+					{ "time": 0.5, "angle": 81.7 },
+					{ "time": 0.7333 }
+				],
+				"translate": [
+					{ "time": 0.1667 },
+					{ "time": 0.5, "x": 17.54, "y": 123.85 },
+					{ "time": 0.7333 }
+				]
+			},
+			"左手": {
+				"rotate": [
+					{ "time": 0.1667 },
+					{ "time": 0.5, "angle": -72.47 },
+					{ "time": 0.7333 }
+				],
+				"translate": [
+					{ "time": 0.1667 },
+					{ "time": 0.5, "x": -16.51, "y": 93.94 },
+					{ "time": 0.7333 }
+				]
+			}
+		}
+	}
+}
+}

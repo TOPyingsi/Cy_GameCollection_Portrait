@@ -1,0 +1,154 @@
+{
+  "__version__": "1.3.9",
+  "bundleConfig": {
+    "custom": {
+      "a3lJePffpC7ZWAEJzpTDmG": {
+        "displayName": "本地",
+        "configs": {
+          "native": {
+            "preferredOptions": {
+              "isRemote": false,
+              "compressionType": "merge_dep"
+            }
+          },
+          "web": {
+            "preferredOptions": {
+              "isRemote": false,
+              "compressionType": "merge_dep"
+            },
+            "fallbackOptions": {
+              "compressionType": "merge_dep"
+            }
+          },
+          "miniGame": {
+            "fallbackOptions": {
+              "isRemote": false,
+              "compressionType": "merge_dep"
+            },
+            "configMode": "overwrite",
+            "overwriteSettings": {
+              "bytedance-mini-game": {
+                "compressionType": "subpackage"
+              },
+              "huawei-quick-game": {
+                "compressionType": "subpackage"
+              },
+              "oppo-mini-game": {
+                "compressionType": "subpackage"
+              },
+              "vivo-mini-game": {
+                "compressionType": "subpackage"
+              },
+              "wechatgame": {
+                "compressionType": "subpackage"
+              },
+              "xiaomi-quick-game": {
+                "compressionType": "subpackage"
+              }
+            }
+          }
+        }
+      },
+      "eeaYAallBGmqFls7JQLeDz": {
+        "displayName": "远程",
+        "configs": {
+          "native": {
+            "preferredOptions": {
+              "isRemote": false,
+              "compressionType": "merge_dep"
+            }
+          },
+          "web": {
+            "preferredOptions": {
+              "isRemote": false,
+              "compressionType": "merge_dep"
+            },
+            "fallbackOptions": {
+              "compressionType": "merge_dep"
+            }
+          },
+          "miniGame": {
+            "fallbackOptions": {
+              "isRemote": false,
+              "compressionType": "merge_dep"
+            },
+            "configMode": "overwrite",
+            "overwriteSettings": {
+              "xiaomi-quick-game": {
+                "compressionType": "zip"
+              },
+              "wechatgame": {
+                "compressionType": "zip"
+              },
+              "vivo-mini-game": {
+                "compressionType": "zip"
+              },
+              "oppo-mini-game": {
+                "compressionType": "zip"
+              },
+              "huawei-quick-game": {
+                "compressionType": "zip"
+              },
+              "bytedance-mini-game": {
+                "compressionType": "zip"
+              }
+            }
+          }
+        }
+      },
+      "default": {
+        "displayName": "i18n:builder.asset_bundle.defaultConfig",
+        "configs": {
+          "native": {
+            "preferredOptions": {
+              "isRemote": false,
+              "compressionType": "merge_dep"
+            }
+          },
+          "web": {
+            "preferredOptions": {
+              "isRemote": false,
+              "compressionType": "merge_dep"
+            },
+            "fallbackOptions": {
+              "compressionType": "merge_dep"
+            }
+          },
+          "miniGame": {
+            "fallbackOptions": {
+              "isRemote": false,
+              "compressionType": "merge_dep"
+            },
+            "configMode": "overwrite",
+            "overwriteSettings": {
+              "oppo-mini-game": {
+                "compressionType": "merge_dep"
+              },
+              "vivo-mini-game": {
+                "compressionType": "merge_dep"
+              },
+              "wechatgame": {
+                "compressionType": "subpackage"
+              },
+              "xiaomi-quick-game": {
+                "compressionType": "subpackage"
+              },
+              "bytedance-mini-game": {
+                "compressionType": "subpackage"
+              },
+              "huawei-quick-game": {
+                "compressionType": "subpackage"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "splash-setting": {
+    "logo": {
+      "type": "none"
+    },
+    "totalTime": 500
+  }
+}

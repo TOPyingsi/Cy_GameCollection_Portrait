@@ -1,0 +1,57 @@
+{
+"skeleton": {
+	"hash": "3hf0tmjbxJ7NU99N8WGkvSAVmOM",
+	"spine": "3.8.75",
+	"x": 14,
+	"y": -585,
+	"width": 717,
+	"height": 543,
+	"images": "./images/",
+	"audio": "C:/Users/admin/Desktop/山海经逃跑/鲨鱼动画"
+},
+"bones": [
+	{ "name": "root" },
+	{ "name": "身体", "parent": "root", "x": 394.33, "y": -271 },
+	{ "name": "油漆", "parent": "身体", "x": -6.98, "y": -66.74 },
+	{ "name": "坐骑", "parent": "身体", "x": -61.94, "y": -69.65 }
+],
+"slots": [
+	{ "name": "坐骑", "bone": "坐骑", "attachment": "坐骑" },
+	{ "name": "身体", "bone": "身体", "attachment": "身体" },
+	{ "name": "油漆", "bone": "油漆", "attachment": "油漆" }
+],
+"skins": [
+	{
+		"name": "default",
+		"attachments": {
+			"坐骑": {
+				"坐骑": { "x": 40.11, "y": 27.14, "width": 717, "height": 543 }
+			},
+			"身体": {
+				"身体": { "x": 5.67, "y": -48.5, "width": 592, "height": 463 }
+			},
+			"油漆": {
+				"油漆": { "x": -8.34, "y": 18.23, "width": 510, "height": 463 }
+			}
+		}
+	}
+],
+"animations": {
+	"animation": {
+		"bones": {
+			"身体": {
+				"translate": [
+					{},
+					{ "time": 0.3333, "y": 40.79 },
+					{ "time": 0.6667 }
+				],
+				"scale": [
+					{},
+					{ "time": 0.3333, "x": 1.045, "y": 0.946 },
+					{ "time": 0.6667 }
+				]
+			}
+		}
+	}
+}
+}

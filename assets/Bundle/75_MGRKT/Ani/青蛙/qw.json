@@ -1,0 +1,297 @@
+{
+"skeleton": {
+	"hash": "47ad4eq2DdASyIZqa0H5d0v+/m0",
+	"spine": "3.8.75",
+	"x": 33,
+	"y": -996,
+	"width": 457,
+	"height": 966,
+	"images": "./images/",
+	"audio": "C:/Users/admin/Desktop/山海经逃跑/青蛙动画"
+},
+"bones": [
+	{ "name": "root" },
+	{ "name": "爆炸头", "parent": "root", "x": 282.55, "y": -217.83, "skin": true },
+	{ "name": "舌头", "parent": "爆炸头", "x": -61.04, "y": 71.97, "skin": true },
+	{ "name": "头1", "parent": "root", "x": 284.38, "y": -253.36, "skin": true },
+	{ "name": "k", "parent": "root", "x": 310.8, "y": -356.31, "skin": true },
+	{ "name": "f", "parent": "root", "x": 237, "y": -398.21, "skin": true },
+	{ "name": "g", "parent": "root", "x": 225.16, "y": -505.71, "skin": true },
+	{ "name": "身体", "parent": "root", "x": 307.15, "y": -508.44, "skin": true },
+	{ "name": "d", "parent": "root", "x": 400.98, "y": -457.43, "skin": true },
+	{ "name": "h", "parent": "root", "x": 398.25, "y": -599.54, "skin": true },
+	{ "name": "j", "parent": "root", "x": 324.46, "y": -632.34, "skin": true },
+	{ "name": "s", "parent": "root", "x": 229.72, "y": -617.76, "skin": true },
+	{ "name": "a", "parent": "root", "x": 359.08, "y": -699.75, "skin": true },
+	{ "name": "后脚", "parent": "root", "x": 339.3, "y": -711.56 },
+	{ "name": "前脚", "parent": "root", "x": 277.34, "y": -680 }
+],
+"slots": [
+	{ "name": "后脚", "bone": "后脚", "attachment": "后脚" },
+	{ "name": "头1", "bone": "头1", "attachment": "头1" },
+	{ "name": "身体", "bone": "身体", "attachment": "身体" },
+	{ "name": "前脚", "bone": "前脚", "attachment": "前脚" },
+	{ "name": "k", "bone": "k", "attachment": "k" },
+	{ "name": "j", "bone": "j", "attachment": "j" },
+	{ "name": "h", "bone": "h", "attachment": "h" },
+	{ "name": "g", "bone": "g", "attachment": "g" },
+	{ "name": "f", "bone": "f", "attachment": "f" },
+	{ "name": "d", "bone": "d", "attachment": "d" },
+	{ "name": "s", "bone": "s", "attachment": "s" },
+	{ "name": "a", "bone": "a", "attachment": "a" },
+	{ "name": "爆炸头", "bone": "爆炸头", "attachment": "爆炸头" },
+	{ "name": "舌头", "bone": "舌头", "attachment": "舌头" }
+],
+"skins": [
+	{
+		"name": "default",
+		"attachments": {
+			"爆炸头": {
+				"爆炸头": { "x": -3.05, "y": -1.67, "width": 335, "height": 245 }
+			},
+			"舌头": {
+				"舌头": { "x": 0.48, "y": -1.14, "width": 86, "height": 234 }
+			},
+			"后脚": {
+				"后脚": { "x": 18.7, "y": -99.94, "width": 216, "height": 303 }
+			},
+			"身体": {
+				"身体": { "x": -5.65, "y": -2.56, "width": 373, "height": 436 }
+			},
+			"a": {
+				"a": { "x": -0.08, "y": 0.25, "width": 88, "height": 31 }
+			},
+			"d": {
+				"d": { "x": -0.98, "y": 0.43, "width": 180, "height": 210 }
+			},
+			"f": {
+				"f": { "x": 4, "y": -3.79, "width": 222, "height": 152 }
+			},
+			"g": {
+				"g": { "x": -1.16, "y": 3.71, "width": 214, "height": 198 }
+			},
+			"h": {
+				"h": { "x": -0.25, "y": 1.54, "width": 176, "height": 208 }
+			},
+			"j": {
+				"j": { "x": -2.96, "y": -10.16, "width": 95, "height": 99 }
+			},
+			"k": {
+				"k": { "x": 1.7, "y": 1.81, "width": 269, "height": 135 }
+			},
+			"前脚": {
+				"前脚": { "x": -102.34, "y": -144.5, "width": 284, "height": 343 }
+			},
+			"s": {
+				"s": { "x": -1.72, "y": -1.24, "width": 214, "height": 162 }
+			},
+			"头1": {
+				"头1": { "x": 0.12, "y": -2.64, "width": 321, "height": 294 }
+			}
+		}
+	},
+	{
+		"name": "dqt",
+		"bones": [ "a", "d", "f", "g", "h", "j", "k", "s", "爆炸头", "舌头" ]
+	},
+	{
+		"name": "zc",
+		"bones": [ "头1", "身体" ]
+	}
+],
+"animations": {
+	"animation": {
+		"bones": {
+			"前脚": {
+				"rotate": [
+					{},
+					{ "time": 0.0333, "angle": -6.8 },
+					{ "time": 0.5, "angle": 83.88 },
+					{ "time": 0.5667, "angle": 64.77 },
+					{ "time": 1.0333, "angle": 3.08 },
+					{ "time": 1.0667 }
+				],
+				"translate": [
+					{},
+					{ "time": 0.5, "x": 99.72, "y": -11.63 },
+					{ "time": 1.0667 }
+				]
+			},
+			"后脚": {
+				"rotate": [
+					{ "angle": 18.65 },
+					{ "time": 0.5, "angle": -60.26 },
+					{ "time": 0.5667, "angle": -47.53 },
+					{ "time": 1, "angle": 22.98 },
+					{ "time": 1.0667, "angle": 18.65 }
+				],
+				"translate": [
+					{},
+					{ "time": 0.5, "x": -76.75, "y": 13.1 },
+					{ "time": 1.0667 }
+				],
+				"scale": [
+					{ "curve": "stepped" },
+					{ "time": 1.0667 }
+				]
+			},
+			"身体": {
+				"translate": [
+					{},
+					{ "time": 0.5, "y": -23 },
+					{ "time": 1 }
+				],
+				"scale": [
+					{},
+					{ "time": 0.5, "y": 0.945 },
+					{ "time": 1 }
+				]
+			},
+			"头1": {
+				"translate": [
+					{},
+					{ "time": 0.5, "y": -45.5 },
+					{ "time": 1 }
+				],
+				"scale": [
+					{},
+					{ "time": 0.5, "y": 0.945 },
+					{ "time": 1 }
+				]
+			}
+		}
+	},
+	"dqt": {
+		"slots": {
+			"j": {
+				"color": [
+					{ "color": "ffffff00" },
+					{ "time": 0.1, "color": "ffffffff" }
+				]
+			},
+			"d": {
+				"color": [
+					{ "color": "ffffff00" },
+					{ "time": 0.1, "color": "ffffffff" }
+				]
+			},
+			"爆炸头": {
+				"color": [
+					{ "color": "ffffff00" },
+					{ "time": 0.1, "color": "ffffffff" }
+				]
+			},
+			"a": {
+				"color": [
+					{ "color": "ffffff00" },
+					{ "time": 0.1, "color": "ffffffff" }
+				]
+			},
+			"s": {
+				"color": [
+					{ "color": "ffffff00" },
+					{ "time": 0.1, "color": "ffffffff" }
+				]
+			},
+			"舌头": {
+				"color": [
+					{ "color": "ffffff00" },
+					{ "time": 0.1, "color": "ffffffff" }
+				]
+			},
+			"f": {
+				"color": [
+					{ "color": "ffffff00" },
+					{ "time": 0.1, "color": "ffffffff" }
+				]
+			},
+			"k": {
+				"color": [
+					{ "color": "ffffff00" },
+					{ "time": 0.1, "color": "ffffffff" }
+				]
+			},
+			"h": {
+				"color": [
+					{ "color": "ffffff00" },
+					{ "time": 0.1, "color": "ffffffff" }
+				]
+			},
+			"g": {
+				"color": [
+					{ "color": "ffffff00" },
+					{ "time": 0.1, "color": "ffffffff" }
+				]
+			}
+		},
+		"bones": {
+			"爆炸头": {
+				"translate": [
+					{},
+					{ "time": 0.5, "y": 279.19 }
+				],
+				"scale": [
+					{}
+				]
+			},
+			"k": {
+				"translate": [
+					{},
+					{ "time": 0.5, "y": 217.63 }
+				]
+			},
+			"f": {
+				"translate": [
+					{},
+					{ "time": 0.5, "x": -114.12, "y": 169.86 }
+				]
+			},
+			"g": {
+				"translate": [
+					{},
+					{ "time": 0.5, "x": -230.9, "y": 134.87 }
+				]
+			},
+			"s": {
+				"translate": [
+					{},
+					{ "time": 0.5, "x": -77.17, "y": 73.74 }
+				]
+			},
+			"j": {
+				"translate": [
+					{},
+					{ "time": 0.5, "x": -121.76, "y": -113.19 }
+				]
+			},
+			"a": {
+				"translate": [
+					{},
+					{ "time": 0.5, "x": 80.61, "y": -109.76 }
+				]
+			},
+			"h": {
+				"translate": [
+					{},
+					{ "time": 0.5, "x": 120.05, "y": -46.3 }
+				]
+			},
+			"d": {
+				"translate": [
+					{},
+					{ "time": 0.5, "x": 164.64, "y": 118.33 }
+				]
+			},
+			"舌头": {
+				"translate": [
+					{}
+				],
+				"scale": [
+					{ "time": 0.4333, "x": 1.059, "y": 0.822 },
+					{ "time": 0.5, "x": 1.059, "y": 1.005 }
+				]
+			}
+		}
+	}
+}
+}

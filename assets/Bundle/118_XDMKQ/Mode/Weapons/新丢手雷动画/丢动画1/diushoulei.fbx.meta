@@ -1,0 +1,100 @@
+{
+  "ver": "2.3.13",
+  "importer": "fbx",
+  "imported": true,
+  "uuid": "4624c560-6c6e-49eb-a60f-0a2be44a6693",
+  "files": [
+    "__original-animation-0.cconb"
+  ],
+  "subMetas": {
+    "73b7f": {
+      "importer": "gltf-animation",
+      "uuid": "4624c560-6c6e-49eb-a60f-0a2be44a6693@73b7f",
+      "displayName": "",
+      "id": "73b7f",
+      "name": "Throw_SL.animation",
+      "userData": {
+        "gltfIndex": 0,
+        "wrapMode": 0,
+        "sample": 24,
+        "span": {
+          "from": 0,
+          "to": 2.5
+        },
+        "events": []
+      },
+      "ver": "1.0.17",
+      "imported": true,
+      "files": [
+        ".cconb"
+      ],
+      "subMetas": {}
+    },
+    "9e92b": {
+      "importer": "gltf-scene",
+      "uuid": "4624c560-6c6e-49eb-a60f-0a2be44a6693@9e92b",
+      "displayName": "",
+      "id": "9e92b",
+      "name": "diushoulei.prefab",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    }
+  },
+  "userData": {
+    "imageMetas": [],
+    "fbx": {
+      "smartMaterialEnabled": true
+    },
+    "animationImportSettings": [
+      {
+        "name": "Take 001",
+        "duration": 2.5,
+        "fps": 30,
+        "splits": [
+          {
+            "name": "Throw_SL",
+            "from": 0,
+            "to": 2.5,
+            "wrapMode": 0,
+            "previousId": "73b7f",
+            "fps": 24
+          }
+        ]
+      }
+    ],
+    "lods": {
+      "enable": false,
+      "hasBuiltinLOD": false,
+      "options": [
+        {
+          "screenRatio": 0.25,
+          "faceCount": 1
+        },
+        {
+          "screenRatio": 0.125,
+          "faceCount": 0.25
+        },
+        {
+          "screenRatio": 0.01,
+          "faceCount": 0.1
+        }
+      ]
+    },
+    "assetFinder": {
+      "meshes": [],
+      "skeletons": [],
+      "textures": [],
+      "materials": [],
+      "scenes": [
+        "4624c560-6c6e-49eb-a60f-0a2be44a6693@9e92b"
+      ]
+    }
+  }
+}

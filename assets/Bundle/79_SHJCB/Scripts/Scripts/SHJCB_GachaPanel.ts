@@ -1,0 +1,158 @@
+import { _decorator, Animation, AnimationClip, Button, Event, Label, Node, randomRange, Sprite, tween } from 'cc';
+import { SHJCB_UIBase } from './SHJCB_UIBase';
+import { SHJCB_DataManager } from './SHJCB_DataManager';
+import { EasingType } from 'db://assets/Scripts/Framework/Utils/TweenUtil';
+import Banner from 'db://assets/Scripts/Banner';
+import { SHJCB_AudioManager } from './SHJCB_AudioManager';
+import { ProjectEventManager, ProjectEvent } from 'db://assets/Scripts/Framework/Managers/ProjectEventManager';
+const { ccclass, property } = _decorator;
+
+@ccclass('SHJCB_GachaPanel')
+export class SHJCB_GachaPanel extends SHJCB_UIBase {
+
+    @property(Label)
+    timesLabel: Label;
+
+    @property(Label)
+    rewardLabel: Label;
+
+    @property(Node)
+    spinner: Node;
+
+    @property(Node)
+    fReward: Node;
+
+    @property(Node)
+    gachaBtn: Node;
+
+    @property(Node)
+    outOfTimes: Node;
+
+    @property(Node)
+    rewardPanel: Node;
+
+    @property(Node)
+    finalReward: Node;
+
+    @property(Node)
+    videoIcon: Node;
+
+    reward = 0;
+    isGacha = false;
+
+    protected _InitData(): void {
+        this.isGacha = false;
+        let data = SHJCB_DataManager.Instance.getArrayData<number>("SkinStates");
+        this.fReward.children[0].active = data[28] == 1;
+        this.fReward.children[1].active = data[28] == 0;
+        let lastGacha = SHJCB_DataManager.Instance.getArrayData<number>("LastGacha");
+        let gacha = SHJCB_DataManager.Instance.getNumberData("Gacha");
+        let date = new Date;
+        if (lastGacha.length == 0 || !((lastGacha.length > 0 && lastGacha[0] == date.getFullYear() && lastGacha[1] == date.getMonth() && lastGacha[2] == date.getDate()))) gacha = 0, SHJCB_DataManager.Instance.setNumberData("Gacha", gacha);
+        this.gachaBtn.getComponent(Button).interactable = gacha < 4;
+        this.gachaBtn.getComponent(Sprite).grayscale = gacha == 4;
+        let ani = this.gachaBtn.getComponent(Animation);
+        if (gacha < 4) ani.play();
+        else ani.stop();
+        this.outOfTimes.active = gacha == 4;
+        this.timesLabel.string = gacha + "/4";
+        this.videoIcon.active = gacha > 0 && gacha < 4;
+        ProjectEventManager.emit(ProjectEvent.弹出窗口, "果冻大师：吃播ASMR");
+    }
+
+    Gacha() {
+        if (this.isGacha) return;
+        let x = this;
+        let gacha = SHJCB_DataManager.Instance.getNumberData("Gacha");
+        if (gacha == 0) this._Gacha();
+        else if (gacha < 4) Banner.Instance.ShowVideoAd(() => { x._Gacha() });
+    }
+
+    _Gacha() {
+        SHJCB_AudioManager.Instance._PlaySound(21);
+        SHJCB_AudioManager.Instance._PlaySound(1);
+        this.isGacha = true;
+        let lastGacha = SHJCB_DataManager.Instance.getArrayData<number>("LastGacha");
+        let date = new Date;
+        lastGacha[0] = date.getFullYear();
+        lastGacha[1] = date.getMonth();
+        lastGacha[2] = date.getDate();
+        SHJCB_DataManager.Instance.setArrayData("LastGacha", lastGacha);
+        let gacha = SHJCB_DataManager.Instance.getNumberData("Gacha");
+        gacha++;
+        SHJCB_DataManager.Instance.setNumberData("Gacha", gacha);
+        let ani = this.gachaBtn.getComponent(Animation);
+        if (gacha < 4) ani.play();
+        else ani.stop();
+        this.gachaBtn.getComponent(Button).interactable = gacha < 4;
+        this.gachaBtn.getComponent(Sprite).grayscale = gacha == 4;
+        this.outOfTimes.active = gacha == 4;
+        this.timesLabel.string = gacha + "/4";
+        this.videoIcon.active = gacha > 0 && gacha < 4;
+        tween(this.spinner)
+            .by(3, { angle: 1800 })
+            .by(2, { angle: randomRange(360, 720) }, { easing: EasingType.cubicOut })
+            .call(() => {
+                let angle = this.spinner.angle % 360;
+                this.reward = Math.floor(angle / 72);
+                console.log(this.reward);
+                this._GetReward();
+            })
+            .start();
+    }
+
+    _GetReward() {
+        let data = SHJCB_DataManager.Instance.getArrayData<number>("SkinStates");
+        this.finalReward.children[0].active = !(this.reward == 3 && data[28] == 0);
+        this.finalReward.children[1].active = (this.reward == 3 && data[28] == 0);
+        switch (this.reward) {
+            case 0:
+                this.reward = 200;
+                break;
+            case 1:
+                this.reward = 500;
+                break;
+            case 2:
+                this.reward = 1000;
+                break;
+            case 3:
+                this.reward = 2000;
+                break;
+            case 4:
+                this.reward = 100;
+                break;
+        }
+        this.rewardLabel.string = this.reward.toString();
+        this.rewardPanel.active = true;
+        let ani = this.rewardPanel.getComponent(Animation);
+        ani.getState("panelIntro").wrapMode = AnimationClip.WrapMode.Reverse;
+        ani.play();
+    }
+
+    CloseReward(event: Event) {
+        SHJCB_AudioManager.Instance._PlaySound(1);
+        let data = SHJCB_DataManager.Instance.getArrayData<number>("SkinStates");
+        if (this.reward == 2000 && data[28] == 0) {
+            data[28] = 1;
+            SHJCB_DataManager.Instance.setArrayData("SkinStates", data);
+        }
+        else {
+            SHJCB_DataManager.coinSpawn = event.target.getWorldPosition();
+            let money = SHJCB_DataManager.Instance.getNumberData("Coin");
+            money += this.reward;
+            SHJCB_DataManager.Instance.setNumberData("Coin", money);
+        }
+        let ani = this.rewardPanel.getComponent(Animation);
+        ani.getState("panelIntro").wrapMode = AnimationClip.WrapMode.Default;
+        ani.play();
+        this._InitData();
+    }
+
+    ClosePanel(): void {
+        if (this.isGacha) return;
+        let ani = this.node.getComponent(Animation);
+        ani.getState("panelIntro").wrapMode = AnimationClip.WrapMode.Default;
+        ani.play();
+    }
+
+}

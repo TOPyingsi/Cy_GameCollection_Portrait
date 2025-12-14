@@ -1,0 +1,212 @@
+{
+"skeleton": {
+	"hash": "2IAFe4du8+TQtXLcPe/4kNB3ud4",
+	"spine": "3.8.75",
+	"x": -93.13,
+	"y": -8.73,
+	"width": 215.45,
+	"height": 297.98,
+	"images": "./images/",
+	"audio": "D:/2025工作/2d/吃播/ui动画/转盘兔子"
+},
+"bones": [
+	{ "name": "root" },
+	{ "name": "bone", "parent": "root", "length": 67.69, "rotation": 89.05, "x": 2.82, "y": 29.37 },
+	{ "name": "bone2", "parent": "bone", "length": 85.45, "rotation": 9.05, "x": 83.08, "y": 1.38 },
+	{ "name": "bone3", "parent": "bone2", "length": 85.29, "rotation": -9.64, "x": 70.96, "y": 24.47 },
+	{ "name": "bone4", "parent": "bone2", "length": 84.23, "rotation": -33.45, "x": 71.06, "y": -22.89 },
+	{ "name": "bone5", "parent": "bone", "x": 30.95, "y": 61.06 },
+	{ "name": "bone6", "parent": "bone", "rotation": -24.75, "x": 72.25, "y": -40.54 },
+	{ "name": "bone7", "parent": "bone5", "x": 40.6, "y": -21.51 },
+	{ "name": "bone8", "parent": "bone", "length": 47, "rotation": -179.5, "x": 20.29, "y": 23.03 },
+	{ "name": "bone9", "parent": "bone", "length": 46.06, "rotation": 174.63, "x": 25.08, "y": -23.52 }
+],
+"slots": [
+	{ "name": "youjiao", "bone": "bone9", "attachment": "youjiao" },
+	{ "name": "zuojiao", "bone": "bone8", "attachment": "zuojiao" },
+	{ "name": "yr", "bone": "bone4", "attachment": "yr" },
+	{ "name": "youshou", "bone": "bone", "attachment": "youshou" },
+	{ "name": "shenti", "bone": "bone", "attachment": "shenti" },
+	{ "name": "zuoshou", "bone": "bone5", "attachment": "zuoshou" },
+	{ "name": "tou", "bone": "bone2", "attachment": "tou" },
+	{ "name": "2", "bone": "bone6", "attachment": "2" },
+	{ "name": "1", "bone": "bone7", "attachment": "1" },
+	{ "name": "zr", "bone": "bone3", "attachment": "zr" }
+],
+"skins": [
+	{
+		"name": "default",
+		"attachments": {
+			"zuojiao": {
+				"zuojiao": { "x": 22.07, "y": -1.09, "rotation": 90.46, "width": 50, "height": 67 }
+			},
+			"tou": {
+				"tou": { "x": 35.13, "y": 5.56, "rotation": -98.09, "width": 153, "height": 125 }
+			},
+			"youjiao": {
+				"youjiao": { "x": 24.88, "y": 2.27, "rotation": 84.85, "width": 50, "height": 67 }
+			},
+			"zuoshou": {
+				"zuoshou": { "x": 0.13, "y": 0.42, "rotation": -89.05, "width": 32, "height": 41 }
+			},
+			"yr": {
+				"yr": { "x": 47.92, "y": -0.47, "rotation": -89.49, "width": 68, "height": 101 }
+			},
+			"youshou": {
+				"youshou": { "x": 80.39, "y": -50.22, "rotation": -89.05, "width": 49, "height": 47 }
+			},
+			"1": {
+				"1": { "x": 1.42, "y": -1.38, "rotation": -89.05, "width": 118, "height": 104 }
+			},
+			"2": {
+				"2": { "x": 13.47, "y": 4.93, "rotation": -89.05, "width": 117, "height": 111 }
+			},
+			"shenti": {
+				"shenti": { "x": 42.49, "y": 6.66, "rotation": -89.05, "width": 152, "height": 110 }
+			},
+			"zr": {
+				"zr": { "x": 43.38, "y": -1.98, "rotation": -118.15, "width": 85, "height": 101 }
+			}
+		}
+	}
+],
+"animations": {
+	"animation": {
+		"bones": {
+			"bone": {
+				"rotate": [
+					{},
+					{ "time": 0.3333, "angle": 15.04, "curve": "stepped" },
+					{ "time": 0.8667, "angle": 15.04 },
+					{ "time": 1.0667 }
+				]
+			},
+			"bone2": {
+				"rotate": [
+					{},
+					{ "time": 0.3333, "angle": -4.39, "curve": "stepped" },
+					{ "time": 0.8667, "angle": -4.39 },
+					{ "time": 1.0667 }
+				]
+			},
+			"bone7": {
+				"rotate": [
+					{ "time": 0.3333 }
+				],
+				"translate": [
+					{},
+					{ "time": 0.3333, "x": -3.2, "y": 23.52, "curve": "stepped" },
+					{ "time": 0.8667, "x": -3.2, "y": 23.52 },
+					{ "time": 1.0667 }
+				]
+			},
+			"bone6": {
+				"rotate": [
+					{ "time": 0.3333 },
+					{ "time": 0.4667, "angle": -9.67 },
+					{ "time": 0.6 },
+					{ "time": 0.7333, "angle": -9.67 },
+					{ "time": 0.8667 }
+				],
+				"translate": [
+					{},
+					{ "time": 0.3333, "x": 27.42, "y": -44.11 },
+					{ "time": 0.4667, "x": 41.09, "y": -42.64 },
+					{ "time": 0.6, "x": 27.42, "y": -44.11 },
+					{ "time": 0.7333, "x": 30.39, "y": -40.65 },
+					{ "time": 0.8667, "x": 27.42, "y": -44.11 },
+					{ "time": 1.0667 }
+				]
+			},
+			"bone3": {
+				"rotate": [
+					{},
+					{ "time": 0.3333, "angle": 44.78, "curve": "stepped" },
+					{ "time": 0.8667, "angle": 44.78 },
+					{ "time": 1.0667 }
+				],
+				"translate": [
+					{},
+					{ "time": 0.3333, "x": 4.46, "y": 13.14, "curve": "stepped" },
+					{ "time": 0.8667, "x": 4.46, "y": 13.14 },
+					{ "time": 1.0667 }
+				]
+			},
+			"bone4": {
+				"rotate": [
+					{},
+					{ "time": 0.3333, "angle": 51.16, "curve": "stepped" },
+					{ "time": 0.8667, "angle": 51.16 },
+					{ "time": 1.0667 }
+				],
+				"translate": [
+					{},
+					{ "time": 0.3333, "x": -2.6, "y": 5.28, "curve": "stepped" },
+					{ "time": 0.8667, "x": -2.6, "y": 5.28 },
+					{ "time": 1.0667 }
+				]
+			},
+			"bone8": {
+				"rotate": [
+					{},
+					{ "time": 0.3333, "angle": -32.59, "curve": "stepped" },
+					{ "time": 0.8667, "angle": -32.59 },
+					{ "time": 1.0667 }
+				],
+				"translate": [
+					{ "curve": "stepped" },
+					{ "time": 0.3333, "curve": "stepped" },
+					{ "time": 0.8667, "curve": "stepped" },
+					{ "time": 1.0667 }
+				]
+			},
+			"bone9": {
+				"rotate": [
+					{},
+					{ "time": 0.3333, "angle": 53.6, "curve": "stepped" },
+					{ "time": 0.8667, "angle": 53.6 },
+					{ "time": 1.0667 }
+				],
+				"translate": [
+					{},
+					{ "time": 0.3333, "x": -1.68, "y": 1.85, "curve": "stepped" },
+					{ "time": 0.8667, "x": -1.68, "y": 1.85 },
+					{ "time": 1.0667 }
+				]
+			},
+			"bone5": {
+				"rotate": [
+					{ "time": 0.3333 },
+					{ "time": 0.4667, "angle": 11.05 },
+					{ "time": 0.6 },
+					{ "time": 0.7333, "angle": 11.05 },
+					{ "time": 0.8667 }
+				],
+				"translate": [
+					{},
+					{ "time": 0.3333, "x": 7.12, "y": 0.23 },
+					{ "time": 0.4667, "x": 18.26, "y": -3.57 },
+					{ "time": 0.6, "x": 7.12, "y": 0.23 },
+					{ "time": 0.7333, "x": 18.26, "y": -3.57 },
+					{ "time": 0.8667, "x": 7.12, "y": 0.23 },
+					{ "time": 1.0667 }
+				]
+			}
+		},
+		"drawOrder": [
+			{
+				"time": 0.3333,
+				"offsets": [
+					{ "slot": "2", "offset": -3 }
+				]
+			},
+			{
+				"time": 1.0333,
+				"offsets": [
+					{ "slot": "2", "offset": 1 }
+				]
+			}
+		]
+	}
+}
+}

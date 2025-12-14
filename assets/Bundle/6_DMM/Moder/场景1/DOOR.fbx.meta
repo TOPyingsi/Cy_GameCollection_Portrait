@@ -1,0 +1,226 @@
+{
+  "ver": "2.3.13",
+  "importer": "fbx",
+  "imported": true,
+  "uuid": "a7a30573-5c72-4474-923a-6ff24e90964a",
+  "files": [],
+  "subMetas": {
+    "70762": {
+      "importer": "gltf-material",
+      "uuid": "a7a30573-5c72-4474-923a-6ff24e90964a@70762",
+      "displayName": "",
+      "id": "70762",
+      "name": "blinn2.material",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "2d4a4": {
+      "importer": "gltf-mesh",
+      "uuid": "a7a30573-5c72-4474-923a-6ff24e90964a@2d4a4",
+      "displayName": "",
+      "id": "2d4a4",
+      "name": "House_Door.mesh",
+      "userData": {
+        "gltfIndex": 0,
+        "triangleCount": 400
+      },
+      "ver": "1.1.1",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "adacb": {
+      "importer": "gltf-embeded-image",
+      "uuid": "a7a30573-5c72-4474-923a-6ff24e90964a@adacb",
+      "displayName": "",
+      "id": "adacb",
+      "name": "file2.image",
+      "userData": {
+        "gltfIndex": 0,
+        "fixAlphaTransparencyArtifacts": true,
+        "hasAlpha": true,
+        "type": "texture"
+      },
+      "ver": "1.0.3",
+      "imported": true,
+      "files": [
+        ".json",
+        ".png"
+      ],
+      "subMetas": {}
+    },
+    "e873a": {
+      "importer": "texture",
+      "uuid": "a7a30573-5c72-4474-923a-6ff24e90964a@e873a",
+      "displayName": "",
+      "id": "e873a",
+      "name": "file2.texture",
+      "userData": {
+        "wrapModeS": "repeat",
+        "wrapModeT": "repeat",
+        "minfilter": "linear",
+        "magfilter": "linear",
+        "mipfilter": "none",
+        "anisotropy": 0,
+        "isUuid": true,
+        "imageUuidOrDatabaseUri": "a7a30573-5c72-4474-923a-6ff24e90964a@adacb"
+      },
+      "ver": "1.0.22",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "2947a": {
+      "importer": "gltf-scene",
+      "uuid": "a7a30573-5c72-4474-923a-6ff24e90964a@2947a",
+      "displayName": "",
+      "id": "2947a",
+      "name": "DOOR.prefab",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    }
+  },
+  "userData": {
+    "imageMetas": [
+      {
+        "name": "file2",
+        "uri": "a7a30573-5c72-4474-923a-6ff24e90964a@adacb"
+      }
+    ],
+    "fbx": {
+      "smartMaterialEnabled": true
+    },
+    "lods": {
+      "enable": false,
+      "hasBuiltinLOD": false,
+      "options": [
+        {
+          "screenRatio": 0.25,
+          "faceCount": 1
+        },
+        {
+          "screenRatio": 0.125,
+          "faceCount": 0.25
+        },
+        {
+          "screenRatio": 0.01,
+          "faceCount": 0.1
+        }
+      ]
+    },
+    "assetFinder": {
+      "meshes": [
+        "a7a30573-5c72-4474-923a-6ff24e90964a@2d4a4"
+      ],
+      "skeletons": [],
+      "textures": [
+        "a7a30573-5c72-4474-923a-6ff24e90964a@e873a"
+      ],
+      "materials": [
+        "a7a30573-5c72-4474-923a-6ff24e90964a@70762"
+      ],
+      "scenes": [
+        "a7a30573-5c72-4474-923a-6ff24e90964a@2947a"
+      ]
+    },
+    "materials": {
+      "a7a30573-5c72-4474-923a-6ff24e90964a@70762": {
+        "__type__": "cc.Material",
+        "_name": "",
+        "_objFlags": 0,
+        "__editorExtras__": {},
+        "_native": "",
+        "_effectAsset": {
+          "__uuid__": "f648964e-8d32-41fc-9ac9-7a1e714dd17b",
+          "__expectedType__": "cc.EffectAsset"
+        },
+        "_techIdx": 0,
+        "_defines": [
+          {
+            "DCC_APP_NAME": 5,
+            "USE_ALBEDO_MAP": true
+          },
+          {},
+          {},
+          {}
+        ],
+        "_states": [
+          {
+            "rasterizerState": {},
+            "depthStencilState": {},
+            "blendState": {
+              "targets": [
+                {}
+              ]
+            }
+          },
+          {
+            "rasterizerState": {},
+            "depthStencilState": {},
+            "blendState": {
+              "targets": [
+                {}
+              ]
+            }
+          },
+          {
+            "rasterizerState": {},
+            "depthStencilState": {},
+            "blendState": {
+              "targets": [
+                {}
+              ]
+            }
+          },
+          {
+            "rasterizerState": {},
+            "depthStencilState": {},
+            "blendState": {
+              "targets": [
+                {}
+              ]
+            }
+          }
+        ],
+        "_props": [
+          {
+            "mainTexture": {
+              "__uuid__": "2ff69880-8360-4ee9-8438-e96c93648fac@6c48a",
+              "__expectedType__": "cc.Texture2D"
+            },
+            "shininessExponent": 6.311790943145752,
+            "specularColor": {
+              "__type__": "cc.Color",
+              "r": 38,
+              "g": 38,
+              "b": 38,
+              "a": 255
+            }
+          },
+          {},
+          {},
+          {}
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,232 @@
+{
+  "ver": "2.3.13",
+  "importer": "fbx",
+  "imported": true,
+  "uuid": "ec40c8b7-bc7b-4000-9798-e431d5b68828",
+  "files": [
+    "__original-animation-0.cconb"
+  ],
+  "subMetas": {
+    "85619": {
+      "importer": "gltf-animation",
+      "uuid": "ec40c8b7-bc7b-4000-9798-e431d5b68828@85619",
+      "displayName": "",
+      "id": "85619",
+      "name": "Jump_Swim.animation",
+      "userData": {
+        "gltfIndex": 0,
+        "wrapMode": 0,
+        "speed": 1,
+        "sample": 24,
+        "span": {
+          "from": 2.0416666666666665,
+          "to": 3.0416666666666665
+        },
+        "events": []
+      },
+      "ver": "1.0.17",
+      "imported": true,
+      "files": [
+        ".cconb"
+      ],
+      "subMetas": {}
+    },
+    "73b7f": {
+      "importer": "gltf-animation",
+      "uuid": "ec40c8b7-bc7b-4000-9798-e431d5b68828@73b7f",
+      "displayName": "",
+      "id": "73b7f",
+      "name": "Idle.animation",
+      "userData": {
+        "gltfIndex": 0,
+        "wrapMode": 2,
+        "sample": 24,
+        "span": {
+          "from": 0,
+          "to": 2
+        },
+        "events": []
+      },
+      "ver": "1.0.17",
+      "imported": true,
+      "files": [
+        ".cconb"
+      ],
+      "subMetas": {}
+    },
+    "3249b": {
+      "importer": "gltf-animation",
+      "uuid": "ec40c8b7-bc7b-4000-9798-e431d5b68828@3249b",
+      "displayName": "",
+      "id": "3249b",
+      "name": "Dance.animation",
+      "userData": {
+        "gltfIndex": 0,
+        "wrapMode": 2,
+        "speed": 1,
+        "sample": 24,
+        "span": {
+          "from": 3.0833333333333335,
+          "to": 4.583333333333333
+        },
+        "events": []
+      },
+      "ver": "1.0.17",
+      "imported": true,
+      "files": [
+        ".cconb"
+      ],
+      "subMetas": {}
+    },
+    "e971a": {
+      "importer": "gltf-animation",
+      "uuid": "ec40c8b7-bc7b-4000-9798-e431d5b68828@e971a",
+      "displayName": "",
+      "id": "e971a",
+      "name": "Jump_Normal.animation",
+      "userData": {
+        "gltfIndex": 0,
+        "wrapMode": 0,
+        "speed": 1,
+        "sample": 24,
+        "span": {
+          "from": 4.625,
+          "to": 5.625
+        },
+        "events": []
+      },
+      "ver": "1.0.17",
+      "imported": true,
+      "files": [
+        ".cconb"
+      ],
+      "subMetas": {}
+    },
+    "5f668": {
+      "importer": "gltf-animation",
+      "uuid": "ec40c8b7-bc7b-4000-9798-e431d5b68828@5f668",
+      "displayName": "",
+      "id": "5f668",
+      "name": "Jump_Rotate.animation",
+      "userData": {
+        "gltfIndex": 0,
+        "wrapMode": 0,
+        "speed": 1,
+        "sample": 24,
+        "span": {
+          "from": 5.666666666666667,
+          "to": 6.916666507720947
+        },
+        "events": []
+      },
+      "ver": "1.0.17",
+      "imported": true,
+      "files": [
+        ".cconb"
+      ],
+      "subMetas": {}
+    },
+    "5bcf2": {
+      "importer": "gltf-scene",
+      "uuid": "ec40c8b7-bc7b-4000-9798-e431d5b68828@5bcf2",
+      "displayName": "",
+      "id": "5bcf2",
+      "name": "guge.prefab",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    }
+  },
+  "userData": {
+    "imageMetas": [],
+    "fbx": {
+      "smartMaterialEnabled": true
+    },
+    "animationImportSettings": [
+      {
+        "name": "Take 001",
+        "duration": 6.916666507720947,
+        "fps": 30,
+        "splits": [
+          {
+            "name": "Idle",
+            "from": 0,
+            "to": 2,
+            "wrapMode": 2,
+            "previousId": "73b7f",
+            "fps": 24
+          },
+          {
+            "name": "Jump_Swim",
+            "from": 2.0416666666666665,
+            "to": 3.0416666666666665,
+            "wrapMode": 0,
+            "speed": 1,
+            "previousId": "85619",
+            "fps": 24
+          },
+          {
+            "name": "Dance",
+            "from": 3.0833333333333335,
+            "to": 4.583333333333333,
+            "wrapMode": 2,
+            "speed": 1,
+            "previousId": "3249b",
+            "fps": 24
+          },
+          {
+            "name": "Jump_Normal",
+            "from": 4.625,
+            "to": 5.625,
+            "wrapMode": 0,
+            "speed": 1,
+            "previousId": "e971a",
+            "fps": 24
+          },
+          {
+            "name": "Jump_Rotate",
+            "from": 5.666666666666667,
+            "to": 6.916666507720947,
+            "wrapMode": 0,
+            "speed": 1,
+            "previousId": "5f668",
+            "fps": 24
+          }
+        ]
+      }
+    ],
+    "lods": {
+      "enable": false,
+      "hasBuiltinLOD": false,
+      "options": [
+        {
+          "screenRatio": 0.25,
+          "faceCount": 1
+        },
+        {
+          "screenRatio": 0.125,
+          "faceCount": 0.25
+        },
+        {
+          "screenRatio": 0.01,
+          "faceCount": 0.1
+        }
+      ]
+    },
+    "assetFinder": {
+      "meshes": [],
+      "skeletons": [],
+      "textures": [],
+      "materials": [],
+      "scenes": [
+        "ec40c8b7-bc7b-4000-9798-e431d5b68828@5bcf2"
+      ]
+    }
+  }
+}

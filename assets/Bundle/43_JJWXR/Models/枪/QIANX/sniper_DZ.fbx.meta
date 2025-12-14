@@ -1,0 +1,186 @@
+{
+  "ver": "2.3.13",
+  "importer": "fbx",
+  "imported": true,
+  "uuid": "63ee6175-120c-48ea-86a2-bcd7f7d76ecf",
+  "files": [
+    "__original-animation-0.cconb"
+  ],
+  "subMetas": {
+    "cf503": {
+      "importer": "gltf-mesh",
+      "uuid": "63ee6175-120c-48ea-86a2-bcd7f7d76ecf@cf503",
+      "displayName": "",
+      "id": "cf503",
+      "name": "_sniper_13_model:_sniper_13_model_0.mesh",
+      "userData": {
+        "gltfIndex": 0,
+        "triangleCount": 6224
+      },
+      "ver": "1.1.1",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "73b7f": {
+      "importer": "gltf-animation",
+      "uuid": "63ee6175-120c-48ea-86a2-bcd7f7d76ecf@73b7f",
+      "displayName": "",
+      "id": "73b7f",
+      "name": "Take 001.animation",
+      "userData": {
+        "gltfIndex": 0,
+        "wrapMode": 1,
+        "sample": 30,
+        "span": {
+          "from": 0,
+          "to": 0.8333333134651184
+        },
+        "events": []
+      },
+      "ver": "1.0.17",
+      "imported": true,
+      "files": [
+        ".cconb"
+      ],
+      "subMetas": {}
+    },
+    "438fe": {
+      "importer": "gltf-skeleton",
+      "uuid": "63ee6175-120c-48ea-86a2-bcd7f7d76ecf@438fe",
+      "displayName": "",
+      "id": "438fe",
+      "name": "UnnamedSkeleton.skeleton",
+      "userData": {
+        "gltfIndex": 0,
+        "jointsLength": 3
+      },
+      "ver": "1.0.1",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "d20e9": {
+      "importer": "texture",
+      "uuid": "63ee6175-120c-48ea-86a2-bcd7f7d76ecf@d20e9",
+      "displayName": "",
+      "id": "d20e9",
+      "name": "file1.texture",
+      "userData": {
+        "wrapModeS": "repeat",
+        "wrapModeT": "repeat",
+        "minfilter": "linear",
+        "magfilter": "linear",
+        "mipfilter": "none",
+        "anisotropy": 0,
+        "isUuid": false,
+        "imageUuidOrDatabaseUri": "db://assets/Bundle/43_JJWXR/Models/枪/QIANX/sniper_13_texture.jpg"
+      },
+      "ver": "1.0.22",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "b1467": {
+      "importer": "gltf-material",
+      "uuid": "63ee6175-120c-48ea-86a2-bcd7f7d76ecf@b1467",
+      "displayName": "",
+      "id": "b1467",
+      "name": "blinn1.material",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "eaeb6": {
+      "importer": "gltf-scene",
+      "uuid": "63ee6175-120c-48ea-86a2-bcd7f7d76ecf@eaeb6",
+      "displayName": "",
+      "id": "eaeb6",
+      "name": "sniper_DZ.prefab",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    }
+  },
+  "userData": {
+    "imageMetas": [
+      {
+        "name": "file1",
+        "uri": "db://assets/Bundle/43_JJWXR/Models/枪/QIANX/sniper_13_texture.jpg"
+      }
+    ],
+    "fbx": {
+      "smartMaterialEnabled": true
+    },
+    "animationImportSettings": [
+      {
+        "name": "Take 001",
+        "duration": 0.8333333134651184,
+        "fps": 30,
+        "splits": [
+          {
+            "name": "Take 001",
+            "from": 0,
+            "to": 0.8333333134651184,
+            "wrapMode": 1,
+            "previousId": "73b7f"
+          }
+        ]
+      }
+    ],
+    "lods": {
+      "enable": false,
+      "hasBuiltinLOD": false,
+      "options": [
+        {
+          "screenRatio": 0.25,
+          "faceCount": 1
+        },
+        {
+          "screenRatio": 0.125,
+          "faceCount": 0.25
+        },
+        {
+          "screenRatio": 0.01,
+          "faceCount": 0.1
+        }
+      ]
+    },
+    "assetFinder": {
+      "meshes": [
+        "63ee6175-120c-48ea-86a2-bcd7f7d76ecf@cf503"
+      ],
+      "skeletons": [
+        "63ee6175-120c-48ea-86a2-bcd7f7d76ecf@438fe"
+      ],
+      "textures": [
+        "63ee6175-120c-48ea-86a2-bcd7f7d76ecf@d20e9"
+      ],
+      "materials": [
+        "63ee6175-120c-48ea-86a2-bcd7f7d76ecf@b1467"
+      ],
+      "scenes": [
+        "63ee6175-120c-48ea-86a2-bcd7f7d76ecf@eaeb6"
+      ]
+    }
+  }
+}

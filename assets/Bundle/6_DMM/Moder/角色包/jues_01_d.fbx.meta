@@ -1,0 +1,339 @@
+{
+  "ver": "2.3.13",
+  "importer": "fbx",
+  "imported": true,
+  "uuid": "a1985657-f043-48fc-8061-5e9782ddff96",
+  "files": [
+    "__original-animation-0.cconb"
+  ],
+  "subMetas": {
+    "ff420": {
+      "importer": "gltf-mesh",
+      "uuid": "a1985657-f043-48fc-8061-5e9782ddff96@ff420",
+      "displayName": "",
+      "id": "ff420",
+      "name": "polySurface7.mesh",
+      "userData": {
+        "gltfIndex": 0,
+        "triangleCount": 5192
+      },
+      "ver": "1.1.1",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "c2696": {
+      "importer": "gltf-animation",
+      "uuid": "a1985657-f043-48fc-8061-5e9782ddff96@c2696",
+      "displayName": "",
+      "id": "c2696",
+      "name": "Idle.animation",
+      "userData": {
+        "gltfIndex": 0,
+        "wrapMode": 2,
+        "speed": 1,
+        "sample": 24,
+        "span": {
+          "from": 0,
+          "to": 1
+        },
+        "events": []
+      },
+      "ver": "1.0.17",
+      "imported": true,
+      "files": [
+        ".cconb"
+      ],
+      "subMetas": {}
+    },
+    "20c15": {
+      "importer": "gltf-animation",
+      "uuid": "a1985657-f043-48fc-8061-5e9782ddff96@20c15",
+      "displayName": "",
+      "id": "20c15",
+      "name": "Walk.animation",
+      "userData": {
+        "gltfIndex": 0,
+        "wrapMode": 2,
+        "speed": 1,
+        "sample": 24,
+        "span": {
+          "from": 1.0416666666666667,
+          "to": 2.125
+        },
+        "events": []
+      },
+      "ver": "1.0.17",
+      "imported": true,
+      "files": [
+        ".cconb"
+      ],
+      "subMetas": {}
+    },
+    "f4113": {
+      "importer": "gltf-animation",
+      "uuid": "a1985657-f043-48fc-8061-5e9782ddff96@f4113",
+      "displayName": "",
+      "id": "f4113",
+      "name": "Jump.animation",
+      "userData": {
+        "gltfIndex": 0,
+        "wrapMode": 0,
+        "speed": 1,
+        "sample": 24,
+        "span": {
+          "from": 2.1666666666666665,
+          "to": 4.041666507720947
+        },
+        "events": []
+      },
+      "ver": "1.0.17",
+      "imported": true,
+      "files": [
+        ".cconb"
+      ],
+      "subMetas": {}
+    },
+    "438fe": {
+      "importer": "gltf-skeleton",
+      "uuid": "a1985657-f043-48fc-8061-5e9782ddff96@438fe",
+      "displayName": "",
+      "id": "438fe",
+      "name": "UnnamedSkeleton.skeleton",
+      "userData": {
+        "gltfIndex": 0,
+        "jointsLength": 34
+      },
+      "ver": "1.0.1",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "d20e9": {
+      "importer": "texture",
+      "uuid": "a1985657-f043-48fc-8061-5e9782ddff96@d20e9",
+      "displayName": "",
+      "id": "d20e9",
+      "name": "file1.texture",
+      "userData": {
+        "wrapModeS": "repeat",
+        "wrapModeT": "repeat",
+        "minfilter": "linear",
+        "magfilter": "linear",
+        "mipfilter": "none",
+        "anisotropy": 0,
+        "isUuid": false,
+        "imageUuidOrDatabaseUri": "db://assets/Bundle/6_DMM/Moder/角色包/123.png"
+      },
+      "ver": "1.0.22",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "7a3ca": {
+      "importer": "gltf-material",
+      "uuid": "a1985657-f043-48fc-8061-5e9782ddff96@7a3ca",
+      "displayName": "",
+      "id": "7a3ca",
+      "name": "lambert2.material",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "1ca35": {
+      "importer": "gltf-scene",
+      "uuid": "a1985657-f043-48fc-8061-5e9782ddff96@1ca35",
+      "displayName": "",
+      "id": "1ca35",
+      "name": "jues_01_d.prefab",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    }
+  },
+  "userData": {
+    "imageMetas": [
+      {
+        "name": "file1",
+        "uri": "db://assets/Bundle/6_DMM/Moder/角色包/123.png"
+      }
+    ],
+    "fbx": {
+      "smartMaterialEnabled": true
+    },
+    "animationImportSettings": [
+      {
+        "name": "Take 001",
+        "duration": 4.041666507720947,
+        "fps": 30,
+        "splits": [
+          {
+            "name": "Idle",
+            "from": 0,
+            "to": 1,
+            "wrapMode": 2,
+            "speed": 1,
+            "previousId": "c2696",
+            "fps": 24
+          },
+          {
+            "name": "Walk",
+            "from": 1.0416666666666667,
+            "to": 2.125,
+            "wrapMode": 2,
+            "speed": 1,
+            "fps": 24,
+            "previousId": "20c15"
+          },
+          {
+            "name": "Jump",
+            "from": 2.1666666666666665,
+            "to": 4.041666507720947,
+            "wrapMode": 0,
+            "speed": 1,
+            "fps": 24,
+            "previousId": "f4113"
+          }
+        ]
+      }
+    ],
+    "lods": {
+      "enable": false,
+      "hasBuiltinLOD": false,
+      "options": [
+        {
+          "screenRatio": 0.25,
+          "faceCount": 1
+        },
+        {
+          "screenRatio": 0.125,
+          "faceCount": 0.25
+        },
+        {
+          "screenRatio": 0.01,
+          "faceCount": 0.1
+        }
+      ]
+    },
+    "assetFinder": {
+      "meshes": [
+        "a1985657-f043-48fc-8061-5e9782ddff96@ff420"
+      ],
+      "skeletons": [
+        "a1985657-f043-48fc-8061-5e9782ddff96@438fe"
+      ],
+      "textures": [
+        "a1985657-f043-48fc-8061-5e9782ddff96@d20e9"
+      ],
+      "materials": [
+        "a1985657-f043-48fc-8061-5e9782ddff96@7a3ca"
+      ],
+      "scenes": [
+        "a1985657-f043-48fc-8061-5e9782ddff96@1ca35"
+      ]
+    },
+    "mountAllAnimationsOnPrefab": true,
+    "materials": {
+      "a1985657-f043-48fc-8061-5e9782ddff96@8d883": {
+        "__type__": "cc.Material",
+        "_name": "",
+        "_objFlags": 0,
+        "__editorExtras__": {},
+        "_native": "",
+        "_effectAsset": {
+          "__uuid__": "1baf0fc9-befa-459c-8bdd-af1a450a0319",
+          "__expectedType__": "cc.EffectAsset"
+        },
+        "_techIdx": 0,
+        "_defines": [
+          {
+            "USE_ALBEDO_MAP": true
+          },
+          {},
+          {},
+          {},
+          {}
+        ],
+        "_states": [
+          {
+            "rasterizerState": {},
+            "depthStencilState": {},
+            "blendState": {
+              "targets": [
+                {}
+              ]
+            }
+          },
+          {
+            "rasterizerState": {},
+            "depthStencilState": {},
+            "blendState": {
+              "targets": [
+                {}
+              ]
+            }
+          },
+          {
+            "rasterizerState": {},
+            "depthStencilState": {},
+            "blendState": {
+              "targets": [
+                {}
+              ]
+            }
+          },
+          {
+            "rasterizerState": {},
+            "depthStencilState": {},
+            "blendState": {
+              "targets": [
+                {}
+              ]
+            }
+          },
+          {
+            "rasterizerState": {},
+            "depthStencilState": {},
+            "blendState": {
+              "targets": [
+                {}
+              ]
+            }
+          }
+        ],
+        "_props": [
+          {
+            "roughness": 1,
+            "mainTexture": {
+              "__uuid__": "a1985657-f043-48fc-8061-5e9782ddff96@d20e9",
+              "__expectedType__": "cc.Texture2D"
+            }
+          },
+          {},
+          {},
+          {},
+          {}
+        ]
+      }
+    }
+  }
+}

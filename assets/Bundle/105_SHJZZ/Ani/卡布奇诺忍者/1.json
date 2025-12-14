@@ -1,0 +1,134 @@
+{
+"skeleton": {
+	"hash": "1eMYFupjteiu5W+23arCQkbsA0I",
+	"spine": "3.8.75",
+	"x": -428.64,
+	"y": -5.28,
+	"width": 860,
+	"height": 709.37,
+	"images": "./images/",
+	"audio": "D:/2025工作/2d/合集小游戏-竖版/AI山海经/制作山海经/动画/卡布奇诺忍者"
+},
+"bones": [
+	{ "name": "root" },
+	{ "name": "bone", "parent": "root", "x": -1.59, "y": 138.51 },
+	{ "name": "bone2", "parent": "bone", "length": 451.75, "rotation": 89.91, "x": 2.78, "y": 23.63 },
+	{ "name": "bone3", "parent": "bone2", "length": 137.37, "rotation": -131.43, "x": 233.75, "y": -147.68 },
+	{ "name": "bone4", "parent": "bone2", "x": 253.23, "y": 9.25 },
+	{ "name": "bone5", "parent": "bone2", "length": 118.29, "rotation": 151.15, "x": 90.26, "y": 155.17 },
+	{ "name": "bone6", "parent": "bone2", "length": 123.39, "rotation": -144.24, "x": 73.59, "y": -167.3 },
+	{ "name": "bone7", "parent": "bone2", "length": 120.95, "rotation": 176.67, "x": -29.71, "y": 72.19 },
+	{ "name": "bone8", "parent": "bone2", "length": 118.1, "rotation": -176.18, "x": -34.29, "y": -78.37 },
+	{ "name": "bone9", "parent": "bone2", "x": 141.51, "y": 10.98 }
+],
+"slots": [
+	{ "name": "忍者绷带", "bone": "bone3", "attachment": "忍者绷带" },
+	{ "name": "左脚", "bone": "bone7", "attachment": "左脚" },
+	{ "name": "右脚", "bone": "bone8", "attachment": "右脚" },
+	{ "name": "左手", "bone": "bone5", "attachment": "左手" },
+	{ "name": "右手", "bone": "bone6", "attachment": "右手" },
+	{ "name": "身体", "bone": "bone2", "attachment": "身体" },
+	{ "name": "嘴巴", "bone": "bone9", "attachment": "嘴巴" },
+	{ "name": "眼睛", "bone": "bone4", "attachment": "眼睛" }
+],
+"skins": [
+	{
+		"name": "default",
+		"attachments": {
+			"嘴巴": {
+				"嘴巴": { "x": 3.06, "y": -8.92, "rotation": -89.91, "width": 68, "height": 56 }
+			},
+			"右脚": {
+				"右脚": { "x": 59, "y": 21.04, "rotation": 86.26, "width": 132, "height": 151 }
+			},
+			"身体": {
+				"身体": { "x": 247.44, "y": 5.22, "rotation": -89.91, "width": 450, "height": 589 }
+			},
+			"眼睛": {
+				"眼睛": { "x": 0.35, "y": -6.52, "rotation": -89.91, "width": 253, "height": 90 },
+				"闭眼": { "x": 6.35, "y": -9.52, "rotation": -89.91, "width": 253, "height": 42 }
+			},
+			"左手": {
+				"左手": { "x": 41.25, "y": -119.23, "rotation": 118.93, "width": 301, "height": 339 }
+			},
+			"忍者绷带": {
+				"忍者绷带": { "x": 94.75, "y": 7.82, "rotation": 41.51, "width": 150, "height": 156 }
+			},
+			"左脚": {
+				"左脚": { "x": 63.97, "y": -25.83, "rotation": 93.42, "width": 132, "height": 151 }
+			},
+			"右手": {
+				"右手": { "x": 33.47, "y": 114.77, "rotation": 54.32, "width": 300, "height": 339 }
+			}
+		}
+	}
+],
+"animations": {
+	"animation": {
+		"slots": {
+			"眼睛": {
+				"attachment": [
+					{ "time": 0.3333, "name": "闭眼" },
+					{ "time": 0.5667, "name": "眼睛" }
+				]
+			}
+		},
+		"bones": {
+			"bone2": {
+				"rotate": [
+					{ "angle": 15.19 },
+					{ "time": 0.5, "angle": -8.44 },
+					{ "time": 1, "angle": 15.19 }
+				]
+			},
+			"bone7": {
+				"rotate": [
+					{ "angle": -18.53 },
+					{ "time": 0.5, "angle": -55.98 },
+					{ "time": 1, "angle": -18.53 }
+				]
+			},
+			"bone": {
+				"translate": [
+					{ "x": -68.96, "curve": 0.25, "c3": 0.75 },
+					{ "time": 0.2667, "x": -4.57, "y": 21.65, "curve": 0.25, "c3": 0.75 },
+					{ "time": 0.5, "x": 70.28, "curve": 0.25, "c3": 0.75 },
+					{ "time": 0.7667, "x": 3.65, "y": 28.87, "curve": 0.25, "c3": 0.75 },
+					{ "time": 1, "x": -67.37 }
+				]
+			},
+			"bone8": {
+				"rotate": [
+					{ "angle": 30.22 },
+					{ "time": 0.5, "angle": 10.75 },
+					{ "time": 1, "angle": 30.22 }
+				]
+			},
+			"bone5": {
+				"rotate": [
+					{},
+					{ "time": 0.2333, "angle": -48.58 },
+					{ "time": 0.5, "angle": 1.23 },
+					{ "time": 0.7667, "angle": -56.57 },
+					{ "time": 1 }
+				]
+			},
+			"bone6": {
+				"rotate": [
+					{},
+					{ "time": 0.2333, "angle": 55.29 },
+					{ "time": 0.5, "angle": 5.09 },
+					{ "time": 0.7667, "angle": 57.2 },
+					{ "time": 1 }
+				]
+			},
+			"bone4": {
+				"scale": [
+					{ "time": 0.1667 },
+					{ "time": 0.3333, "x": 0.812 }
+				]
+			}
+		}
+	}
+}
+}

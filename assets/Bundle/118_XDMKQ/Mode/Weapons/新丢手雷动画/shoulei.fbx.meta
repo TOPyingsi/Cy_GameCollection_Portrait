@@ -1,0 +1,240 @@
+{
+  "ver": "2.3.13",
+  "importer": "fbx",
+  "imported": true,
+  "uuid": "58719940-dce6-4fda-baa1-a25c6ce2aabf",
+  "files": [],
+  "subMetas": {
+    "70762": {
+      "importer": "gltf-material",
+      "uuid": "58719940-dce6-4fda-baa1-a25c6ce2aabf@70762",
+      "displayName": "",
+      "id": "70762",
+      "name": "blinn2.material",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "ae3ae": {
+      "importer": "gltf-mesh",
+      "uuid": "58719940-dce6-4fda-baa1-a25c6ce2aabf@ae3ae",
+      "displayName": "",
+      "id": "ae3ae",
+      "name": "Stielhandgranate_low.mesh",
+      "userData": {
+        "gltfIndex": 0,
+        "triangleCount": 896
+      },
+      "ver": "1.1.1",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "819a3": {
+      "importer": "gltf-embeded-image",
+      "uuid": "58719940-dce6-4fda-baa1-a25c6ce2aabf@819a3",
+      "displayName": "",
+      "id": "819a3",
+      "name": "Stielhandgranate_BaseColor_1.image",
+      "userData": {
+        "gltfIndex": 0,
+        "fixAlphaTransparencyArtifacts": true,
+        "hasAlpha": false,
+        "type": "texture"
+      },
+      "ver": "1.0.3",
+      "imported": true,
+      "files": [
+        ".jpg",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "0e9fc": {
+      "importer": "texture",
+      "uuid": "58719940-dce6-4fda-baa1-a25c6ce2aabf@0e9fc",
+      "displayName": "",
+      "id": "0e9fc",
+      "name": "Stielhandgranate_BaseColor_1.texture",
+      "userData": {
+        "wrapModeS": "repeat",
+        "wrapModeT": "repeat",
+        "minfilter": "linear",
+        "magfilter": "linear",
+        "mipfilter": "none",
+        "anisotropy": 0,
+        "isUuid": true,
+        "imageUuidOrDatabaseUri": "58719940-dce6-4fda-baa1-a25c6ce2aabf@819a3"
+      },
+      "ver": "1.0.22",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "65ba5": {
+      "importer": "gltf-scene",
+      "uuid": "58719940-dce6-4fda-baa1-a25c6ce2aabf@65ba5",
+      "displayName": "",
+      "id": "65ba5",
+      "name": "shoulei.prefab",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    }
+  },
+  "userData": {
+    "imageMetas": [
+      {
+        "name": "Stielhandgranate_BaseColor_1",
+        "uri": "58719940-dce6-4fda-baa1-a25c6ce2aabf@819a3"
+      }
+    ],
+    "fbx": {
+      "smartMaterialEnabled": true
+    },
+    "lods": {
+      "enable": false,
+      "hasBuiltinLOD": false,
+      "options": [
+        {
+          "screenRatio": 0.25,
+          "faceCount": 1
+        },
+        {
+          "screenRatio": 0.125,
+          "faceCount": 0.25
+        },
+        {
+          "screenRatio": 0.01,
+          "faceCount": 0.1
+        }
+      ]
+    },
+    "assetFinder": {
+      "meshes": [
+        "58719940-dce6-4fda-baa1-a25c6ce2aabf@ae3ae"
+      ],
+      "skeletons": [],
+      "textures": [
+        "58719940-dce6-4fda-baa1-a25c6ce2aabf@0e9fc"
+      ],
+      "materials": [
+        "58719940-dce6-4fda-baa1-a25c6ce2aabf@70762"
+      ],
+      "scenes": [
+        "58719940-dce6-4fda-baa1-a25c6ce2aabf@65ba5"
+      ]
+    },
+    "materials": {
+      "58719940-dce6-4fda-baa1-a25c6ce2aabf@70762": {
+        "__type__": "cc.Material",
+        "_name": "",
+        "_objFlags": 0,
+        "__editorExtras__": {},
+        "_native": "",
+        "_effectAsset": {
+          "__uuid__": "c8f66d17-351a-48da-a12c-0212d28575c4",
+          "__expectedType__": "cc.EffectAsset"
+        },
+        "_techIdx": 0,
+        "_defines": [
+          {
+            "USE_ALBEDO_MAP": true
+          },
+          {},
+          {},
+          {},
+          {},
+          {}
+        ],
+        "_states": [
+          {
+            "rasterizerState": {},
+            "depthStencilState": {},
+            "blendState": {
+              "targets": [
+                {}
+              ]
+            }
+          },
+          {
+            "rasterizerState": {},
+            "depthStencilState": {},
+            "blendState": {
+              "targets": [
+                {}
+              ]
+            }
+          },
+          {
+            "rasterizerState": {},
+            "depthStencilState": {},
+            "blendState": {
+              "targets": [
+                {}
+              ]
+            }
+          },
+          {
+            "rasterizerState": {},
+            "depthStencilState": {},
+            "blendState": {
+              "targets": [
+                {}
+              ]
+            }
+          },
+          {
+            "rasterizerState": {},
+            "depthStencilState": {},
+            "blendState": {
+              "targets": [
+                {}
+              ]
+            }
+          },
+          {
+            "rasterizerState": {},
+            "depthStencilState": {},
+            "blendState": {
+              "targets": [
+                {}
+              ]
+            }
+          }
+        ],
+        "_props": [
+          {
+            "roughness": 0,
+            "mainTexture": {
+              "__uuid__": "58719940-dce6-4fda-baa1-a25c6ce2aabf@0e9fc",
+              "__expectedType__": "cc.Texture2D"
+            }
+          },
+          {},
+          {},
+          {},
+          {},
+          {}
+        ]
+      }
+    }
+  }
+}

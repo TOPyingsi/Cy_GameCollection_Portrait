@@ -1,0 +1,253 @@
+{
+  "ver": "2.3.13",
+  "importer": "fbx",
+  "imported": true,
+  "uuid": "16893921-6ee9-46d6-9e4e-83a3f38e9dbc",
+  "files": [
+    "__original-animation-0.cconb"
+  ],
+  "subMetas": {
+    "57146": {
+      "importer": "gltf-animation",
+      "uuid": "16893921-6ee9-46d6-9e4e-83a3f38e9dbc@57146",
+      "displayName": "",
+      "id": "57146",
+      "name": "Walk.animation",
+      "userData": {
+        "gltfIndex": 0,
+        "wrapMode": 2,
+        "speed": 1,
+        "sample": 24,
+        "span": {
+          "from": 1.0416666666666667,
+          "to": 2.125
+        },
+        "events": []
+      },
+      "ver": "1.0.17",
+      "imported": true,
+      "files": [
+        ".cconb"
+      ],
+      "subMetas": {}
+    },
+    "62898": {
+      "importer": "gltf-mesh",
+      "uuid": "16893921-6ee9-46d6-9e4e-83a3f38e9dbc@62898",
+      "displayName": "",
+      "id": "62898",
+      "name": "MeshS_11.mesh",
+      "userData": {
+        "gltfIndex": 0,
+        "triangleCount": 5312
+      },
+      "ver": "1.1.1",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "73b7f": {
+      "importer": "gltf-animation",
+      "uuid": "16893921-6ee9-46d6-9e4e-83a3f38e9dbc@73b7f",
+      "displayName": "",
+      "id": "73b7f",
+      "name": "Idle.animation",
+      "userData": {
+        "gltfIndex": 0,
+        "wrapMode": 2,
+        "sample": 24,
+        "span": {
+          "from": 0,
+          "to": 1
+        },
+        "events": []
+      },
+      "ver": "1.0.17",
+      "imported": true,
+      "files": [
+        ".cconb"
+      ],
+      "subMetas": {}
+    },
+    "f4113": {
+      "importer": "gltf-animation",
+      "uuid": "16893921-6ee9-46d6-9e4e-83a3f38e9dbc@f4113",
+      "displayName": "",
+      "id": "f4113",
+      "name": "Jump.animation",
+      "userData": {
+        "gltfIndex": 0,
+        "wrapMode": 0,
+        "speed": 1,
+        "sample": 24,
+        "span": {
+          "from": 2.1666666666666665,
+          "to": 4.041666507720947
+        },
+        "events": []
+      },
+      "ver": "1.0.17",
+      "imported": true,
+      "files": [
+        ".cconb"
+      ],
+      "subMetas": {}
+    },
+    "438fe": {
+      "importer": "gltf-skeleton",
+      "uuid": "16893921-6ee9-46d6-9e4e-83a3f38e9dbc@438fe",
+      "displayName": "",
+      "id": "438fe",
+      "name": "UnnamedSkeleton.skeleton",
+      "userData": {
+        "gltfIndex": 0,
+        "jointsLength": 34
+      },
+      "ver": "1.0.1",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "d20e9": {
+      "importer": "texture",
+      "uuid": "16893921-6ee9-46d6-9e4e-83a3f38e9dbc@d20e9",
+      "displayName": "",
+      "id": "d20e9",
+      "name": "file1.texture",
+      "userData": {
+        "wrapModeS": "repeat",
+        "wrapModeT": "repeat",
+        "minfilter": "linear",
+        "magfilter": "linear",
+        "mipfilter": "none",
+        "anisotropy": 0,
+        "isUuid": false,
+        "imageUuidOrDatabaseUri": "db://assets/Bundle/6_DMM/Moder/角色包/123.png"
+      },
+      "ver": "1.0.22",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "7a3ca": {
+      "importer": "gltf-material",
+      "uuid": "16893921-6ee9-46d6-9e4e-83a3f38e9dbc@7a3ca",
+      "displayName": "",
+      "id": "7a3ca",
+      "name": "lambert2.material",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "ae271": {
+      "importer": "gltf-scene",
+      "uuid": "16893921-6ee9-46d6-9e4e-83a3f38e9dbc@ae271",
+      "displayName": "",
+      "id": "ae271",
+      "name": "jues_11_dz.prefab",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    }
+  },
+  "userData": {
+    "imageMetas": [
+      {
+        "name": "file1",
+        "uri": "db://assets/Bundle/6_DMM/Moder/角色包/123.png"
+      }
+    ],
+    "fbx": {
+      "smartMaterialEnabled": true
+    },
+    "animationImportSettings": [
+      {
+        "name": "Take 001",
+        "duration": 4.041666507720947,
+        "fps": 30,
+        "splits": [
+          {
+            "name": "Idle",
+            "from": 0,
+            "to": 1,
+            "wrapMode": 2,
+            "previousId": "73b7f",
+            "fps": 24
+          },
+          {
+            "name": "Walk",
+            "from": 1.0416666666666667,
+            "to": 2.125,
+            "wrapMode": 2,
+            "speed": 1,
+            "fps": 24,
+            "previousId": "57146"
+          },
+          {
+            "name": "Jump",
+            "from": 2.1666666666666665,
+            "to": 4.041666507720947,
+            "wrapMode": 0,
+            "speed": 1,
+            "fps": 24,
+            "previousId": "f4113"
+          }
+        ]
+      }
+    ],
+    "lods": {
+      "enable": false,
+      "hasBuiltinLOD": false,
+      "options": [
+        {
+          "screenRatio": 0.25,
+          "faceCount": 1
+        },
+        {
+          "screenRatio": 0.125,
+          "faceCount": 0.25
+        },
+        {
+          "screenRatio": 0.01,
+          "faceCount": 0.1
+        }
+      ]
+    },
+    "assetFinder": {
+      "meshes": [
+        "16893921-6ee9-46d6-9e4e-83a3f38e9dbc@62898"
+      ],
+      "skeletons": [
+        "16893921-6ee9-46d6-9e4e-83a3f38e9dbc@438fe"
+      ],
+      "textures": [
+        "16893921-6ee9-46d6-9e4e-83a3f38e9dbc@d20e9"
+      ],
+      "materials": [
+        "16893921-6ee9-46d6-9e4e-83a3f38e9dbc@7a3ca"
+      ],
+      "scenes": [
+        "16893921-6ee9-46d6-9e4e-83a3f38e9dbc@ae271"
+      ]
+    }
+  }
+}

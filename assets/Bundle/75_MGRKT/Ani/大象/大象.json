@@ -1,0 +1,52 @@
+{
+"skeleton": {
+	"hash": "7Aig+rscjfkE1ISxz5erT4Ag2Mk",
+	"spine": "3.8.75",
+	"x": -1,
+	"y": -719,
+	"width": 596,
+	"height": 720,
+	"images": "./images/",
+	"audio": "C:/Users/admin/Desktop/山海经逃跑/大象"
+},
+"bones": [
+	{ "name": "root" },
+	{ "name": "大象", "parent": "root", "x": 402.56, "y": -338.47 }
+],
+"slots": [
+	{ "name": "大象", "bone": "大象", "attachment": "大象" }
+],
+"skins": [
+	{
+		"name": "default",
+		"attachments": {
+			"大象": {
+				"大象": { "x": -105.56, "y": -20.53, "width": 596, "height": 720 }
+			}
+		}
+	}
+],
+"animations": {
+	"animation": {
+		"bones": {
+			"大象": {
+				"rotate": [
+					{ "angle": 7.31 },
+					{ "time": 0.5, "angle": -9.73 },
+					{ "time": 0.8333, "angle": 7.31 }
+				],
+				"translate": [
+					{},
+					{ "time": 0.5, "x": 64.86, "y": 185.21 },
+					{ "time": 0.8333 }
+				],
+				"scale": [
+					{ "y": 0.896 },
+					{ "time": 0.5, "y": 1.052 },
+					{ "time": 0.8333, "y": 0.896 }
+				]
+			}
+		}
+	}
+}
+}

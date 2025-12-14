@@ -1,0 +1,151 @@
+{
+"skeleton": {
+	"hash": "JAKKLMg63PcllW5h74djWJotX+0",
+	"spine": "3.8.75",
+	"x": -169.17,
+	"y": -25.11,
+	"width": 335,
+	"height": 340,
+	"images": "./images/",
+	"audio": "D:/2025工作/2d/吃播/ui动画/商店兔子"
+},
+"bones": [
+	{ "name": "root" },
+	{ "name": "bone", "parent": "root", "length": 109.85, "rotation": 88.22, "x": -0.42, "y": 23.67 },
+	{ "name": "bone2", "parent": "bone", "length": 142.02, "rotation": 4.53, "x": 129.13, "y": -5.54 },
+	{ "name": "bone3", "parent": "bone", "length": 88.28, "rotation": 39.09, "x": 55.5, "y": 37.17 },
+	{ "name": "bone4", "parent": "bone", "length": 89.23, "rotation": -43.44, "x": 58.13, "y": -47.74 },
+	{ "name": "bone5", "parent": "bone2", "length": 116.64, "rotation": -87.41, "x": 65.73, "y": 41.74 },
+	{ "name": "bone6", "parent": "bone5", "x": 141.52, "y": 15.19, "color": "00ffddff" },
+	{ "name": "bone7", "parent": "bone5", "x": 37.04, "y": -36.91, "color": "00ffddff" }
+],
+"slots": [
+	{ "name": "3", "bone": "root", "attachment": "3" },
+	{ "name": "4", "bone": "root", "attachment": "4" },
+	{ "name": "shenti", "bone": "bone", "attachment": "shenti" },
+	{ "name": "tou", "bone": "bone2", "attachment": "tou" },
+	{ "name": "mojing", "bone": "bone5", "attachment": "mojing" },
+	{ "name": "zuiba", "bone": "bone2", "attachment": "zuiba" },
+	{ "name": "x", "bone": "bone6" },
+	{ "name": "x2", "bone": "bone7" },
+	{ "name": "youshou", "bone": "bone4", "attachment": "youshou" },
+	{ "name": "zuoshou", "bone": "bone3", "attachment": "zuoshou" },
+	{ "name": "1", "bone": "root", "attachment": "1" },
+	{ "name": "2", "bone": "root", "attachment": "2" }
+],
+"skins": [
+	{
+		"name": "default",
+		"attachments": {
+			"zuiba": {
+				"zuiba": { "x": 20.92, "y": -8.72, "rotation": -92.75, "width": 82, "height": 38 }
+			},
+			"zuoshou": {
+				"zuoshou": { "x": 51.53, "y": 8.9, "rotation": -127.32, "width": 120, "height": 96 }
+			},
+			"tou": {
+				"tou": { "x": 50.6, "y": 35.91, "rotation": -92.75, "width": 272, "height": 227 }
+			},
+			"x": {
+				"x": { "x": 0.39, "y": -1.73, "rotation": -5.34, "width": 47, "height": 49 }
+			},
+			"youshou": {
+				"youshou": { "x": 54.69, "y": -4.13, "rotation": -44.78, "width": 112, "height": 94 }
+			},
+			"1": {
+				"1": { "x": -99.67, "y": 32.39, "width": 139, "height": 115 }
+			},
+			"2": {
+				"2": { "x": 81.33, "y": 11.39, "width": 87, "height": 73 }
+			},
+			"3": {
+				"3": { "x": 105.83, "y": 51.89, "width": 120, "height": 112 }
+			},
+			"4": {
+				"4": { "x": -69.67, "y": 88.39, "width": 127, "height": 99 }
+			},
+			"shenti": {
+				"shenti": { "x": 49.68, "y": 1.79, "rotation": -88.22, "width": 195, "height": 159 }
+			},
+			"x2": {
+				"x": { "x": 0.39, "y": -1.73, "rotation": -5.34, "width": 47, "height": 49 }
+			},
+			"mojing": {
+				"mojing": { "x": 52.57, "y": -2.24, "rotation": -5.34, "width": 176, "height": 66 }
+			}
+		}
+	}
+],
+"animations": {
+	"animation": {
+		"slots": {
+			"x": {
+				"attachment": [
+					{ "time": 0.1667, "name": "x" },
+					{ "time": 0.8667, "name": "x" }
+				]
+			},
+			"x2": {
+				"attachment": [
+					{ "time": 0.6667, "name": "x" },
+					{ "time": 1.3667, "name": "x" }
+				]
+			}
+		},
+		"bones": {
+			"bone2": {
+				"rotate": [
+					{ "angle": -7.52, "curve": 0.25, "c3": 0.75 },
+					{ "time": 0.6667, "angle": 3.57, "curve": 0.25, "c3": 0.75 },
+					{ "time": 1.3333, "angle": -7.52 }
+				]
+			},
+			"bone3": {
+				"rotate": [
+					{ "angle": -5.4, "curve": 0.375, "c2": 0.62, "c3": 0.716 },
+					{ "time": 0.1333 },
+					{ "time": 0.8, "angle": -41.52, "curve": 0.243, "c3": 0.68, "c4": 0.71 },
+					{ "time": 1.3333, "angle": -5.4 }
+				],
+				"translate": [
+					{}
+				]
+			},
+			"bone4": {
+				"rotate": [
+					{ "angle": 6.38, "curve": 0.375, "c2": 0.62, "c3": 0.716 },
+					{ "time": 0.1333, "curve": 0.25, "c3": 0.75 },
+					{ "time": 0.8, "angle": 49.06, "curve": 0.243, "c3": 0.68, "c4": 0.71 },
+					{ "time": 1.3333, "angle": 6.38 }
+				]
+			},
+			"bone6": {
+				"rotate": [
+					{ "time": 0.1667 },
+					{ "time": 0.5, "angle": -151.87 },
+					{ "time": 0.8667, "angle": 58.97 }
+				],
+				"scale": [
+					{},
+					{ "time": 0.1667, "x": 0.001, "y": 0.001 },
+					{ "time": 0.5 },
+					{ "time": 0.8667, "x": 0.001, "y": 0.001 }
+				]
+			},
+			"bone7": {
+				"rotate": [
+					{ "time": 0.6667 },
+					{ "time": 1, "angle": -151.87 },
+					{ "time": 1.3667, "angle": 58.97 }
+				],
+				"scale": [
+					{},
+					{ "time": 0.6667, "x": 0.001, "y": 0.001 },
+					{ "time": 1 },
+					{ "time": 1.3667, "x": 0.001, "y": 0.001 }
+				]
+			}
+		}
+	}
+}
+}

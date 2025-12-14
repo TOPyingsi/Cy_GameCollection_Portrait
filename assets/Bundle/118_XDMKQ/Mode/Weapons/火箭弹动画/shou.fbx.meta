@@ -1,0 +1,199 @@
+{
+  "ver": "2.3.13",
+  "importer": "fbx",
+  "imported": true,
+  "uuid": "e3536db1-2523-4768-8dc3-d341aea53d9d",
+  "files": [
+    "__original-animation-0.cconb"
+  ],
+  "subMetas": {
+    "73b7f": {
+      "importer": "gltf-animation",
+      "uuid": "e3536db1-2523-4768-8dc3-d341aea53d9d@73b7f",
+      "displayName": "",
+      "id": "73b7f",
+      "name": "LayDown_RPG.animation",
+      "userData": {
+        "gltfIndex": 0,
+        "wrapMode": 0,
+        "sample": 24,
+        "span": {
+          "from": 0,
+          "to": 0.4166666666666667
+        },
+        "events": []
+      },
+      "ver": "1.0.17",
+      "imported": true,
+      "files": [
+        ".cconb"
+      ],
+      "subMetas": {}
+    },
+    "73f63": {
+      "importer": "gltf-animation",
+      "uuid": "e3536db1-2523-4768-8dc3-d341aea53d9d@73f63",
+      "displayName": "",
+      "id": "73f63",
+      "name": "TakeUp_RPG.animation",
+      "userData": {
+        "gltfIndex": 0,
+        "wrapMode": 36,
+        "speed": 1,
+        "sample": 24,
+        "span": {
+          "from": 0,
+          "to": 0.4166666666666667
+        },
+        "events": []
+      },
+      "ver": "1.0.17",
+      "imported": true,
+      "files": [
+        ".cconb"
+      ],
+      "subMetas": {}
+    },
+    "3dd96": {
+      "importer": "gltf-animation",
+      "uuid": "e3536db1-2523-4768-8dc3-d341aea53d9d@3dd96",
+      "displayName": "",
+      "id": "3dd96",
+      "name": "Fire_RPG.animation",
+      "userData": {
+        "gltfIndex": 0,
+        "wrapMode": 0,
+        "speed": 1,
+        "sample": 24,
+        "span": {
+          "from": 0.875,
+          "to": 1.5
+        },
+        "events": []
+      },
+      "ver": "1.0.17",
+      "imported": true,
+      "files": [
+        ".cconb"
+      ],
+      "subMetas": {}
+    },
+    "90d42": {
+      "importer": "gltf-animation",
+      "uuid": "e3536db1-2523-4768-8dc3-d341aea53d9d@90d42",
+      "displayName": "",
+      "id": "90d42",
+      "name": "Reload_RPG.animation",
+      "userData": {
+        "gltfIndex": 0,
+        "wrapMode": 0,
+        "speed": 1,
+        "sample": 24,
+        "span": {
+          "from": 1.5416666666666667,
+          "to": 3.2916667461395264
+        },
+        "events": []
+      },
+      "ver": "1.0.17",
+      "imported": true,
+      "files": [
+        ".cconb"
+      ],
+      "subMetas": {}
+    },
+    "21bd8": {
+      "importer": "gltf-scene",
+      "uuid": "e3536db1-2523-4768-8dc3-d341aea53d9d@21bd8",
+      "displayName": "",
+      "id": "21bd8",
+      "name": "shou.prefab",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    }
+  },
+  "userData": {
+    "imageMetas": [],
+    "fbx": {
+      "smartMaterialEnabled": true
+    },
+    "animationImportSettings": [
+      {
+        "name": "Take 001",
+        "duration": 3.2916667461395264,
+        "fps": 30,
+        "splits": [
+          {
+            "name": "LayDown_RPG",
+            "from": 0,
+            "to": 0.4166666666666667,
+            "wrapMode": 0,
+            "previousId": "73b7f",
+            "fps": 24
+          },
+          {
+            "name": "TakeUp_RPG",
+            "from": 0,
+            "to": 0.4166666666666667,
+            "wrapMode": 36,
+            "speed": 1,
+            "fps": 24,
+            "previousId": "73f63"
+          },
+          {
+            "name": "Fire_RPG",
+            "from": 0.875,
+            "to": 1.5,
+            "wrapMode": 0,
+            "speed": 1,
+            "fps": 24,
+            "previousId": "3dd96"
+          },
+          {
+            "name": "Reload_RPG",
+            "from": 1.5416666666666667,
+            "to": 3.2916667461395264,
+            "wrapMode": 0,
+            "speed": 1,
+            "fps": 24,
+            "previousId": "90d42"
+          }
+        ]
+      }
+    ],
+    "lods": {
+      "enable": false,
+      "hasBuiltinLOD": false,
+      "options": [
+        {
+          "screenRatio": 0.25,
+          "faceCount": 1
+        },
+        {
+          "screenRatio": 0.125,
+          "faceCount": 0.25
+        },
+        {
+          "screenRatio": 0.01,
+          "faceCount": 0.1
+        }
+      ]
+    },
+    "assetFinder": {
+      "meshes": [],
+      "skeletons": [],
+      "textures": [],
+      "materials": [],
+      "scenes": [
+        "e3536db1-2523-4768-8dc3-d341aea53d9d@21bd8"
+      ]
+    }
+  }
+}

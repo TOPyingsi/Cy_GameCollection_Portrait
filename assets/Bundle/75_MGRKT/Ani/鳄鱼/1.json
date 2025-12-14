@@ -1,0 +1,62 @@
+{
+"skeleton": {
+	"hash": "+kmmCNe8au3MNnZ2H/X5xCEkT6Q",
+	"spine": "3.8.75",
+	"x": 47,
+	"y": -529,
+	"width": 1053,
+	"height": 438,
+	"images": "./images/",
+	"audio": "C:/Users/admin/Desktop/山海经逃跑/鳄鱼动画"
+},
+"bones": [
+	{ "name": "root" },
+	{ "name": "身体", "parent": "root", "x": 448.86, "y": -319.43 },
+	{ "name": "变色", "parent": "身体", "x": 113.95, "y": -33.38 },
+	{ "name": "油漆", "parent": "身体", "x": 237.11, "y": -58.7 },
+	{ "name": "口香糖", "parent": "身体", "x": -222.14, "y": 55.25 }
+],
+"slots": [
+	{ "name": "身体", "bone": "身体", "attachment": "身体" },
+	{ "name": "油漆", "bone": "油漆", "attachment": "油漆" },
+	{ "name": "变色", "bone": "变色", "attachment": "变色" },
+	{ "name": "口香糖", "bone": "口香糖", "attachment": "口香糖" }
+],
+"skins": [
+	{
+		"name": "default",
+		"attachments": {
+			"口香糖": {
+				"口香糖": { "x": 77.28, "y": 15.18, "width": 514, "height": 316 }
+			},
+			"身体": {
+				"身体": { "x": 178.64, "y": -24.07, "width": 945, "height": 371 }
+			},
+			"变色": {
+				"变色": { "x": 64.69, "y": 9.31, "width": 945, "height": 371 }
+			},
+			"油漆": {
+				"油漆": { "x": -42.97, "y": 29.13, "width": 894, "height": 360 }
+			}
+		}
+	}
+],
+"animations": {
+	"animation": {
+		"bones": {
+			"身体": {
+				"translate": [
+					{},
+					{ "time": 0.3333, "y": 92.75 },
+					{ "time": 0.6667 }
+				],
+				"scale": [
+					{},
+					{ "time": 0.3333, "x": 1.028, "y": 1.098 },
+					{ "time": 0.6667 }
+				]
+			}
+		}
+	}
+}
+}

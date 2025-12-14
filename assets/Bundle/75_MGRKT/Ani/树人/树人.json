@@ -1,0 +1,109 @@
+{
+"skeleton": {
+	"hash": "Zj4OInYp2+WwK1PKg5d9dZrd5Z0",
+	"spine": "3.8.75",
+	"x": -1,
+	"y": -737,
+	"width": 599,
+	"height": 724,
+	"images": "./images/",
+	"audio": "C:/Users/admin/Desktop/山海经逃跑/树人"
+},
+"bones": [
+	{ "name": "root" },
+	{ "name": "头", "parent": "root", "x": 340.29, "y": -144.73 },
+	{ "name": "左脚", "parent": "头", "x": -13.97, "y": -156.69 },
+	{ "name": "右脚", "parent": "头", "x": 118.76, "y": -97.8 },
+	{ "name": "肿", "parent": "右脚", "x": -290.42, "y": -430.14, "skin": true },
+	{ "name": "眼泪", "parent": "头", "x": -48.89, "y": 21.48, "skin": true }
+],
+"slots": [
+	{ "name": "左脚", "bone": "左脚", "attachment": "左脚" },
+	{ "name": "右脚", "bone": "右脚", "attachment": "右脚" },
+	{ "name": "头", "bone": "头", "attachment": "头" },
+	{ "name": "肿", "bone": "肿", "attachment": "肿" },
+	{ "name": "眼泪", "bone": "眼泪", "attachment": "眼泪" }
+],
+"skins": [
+	{
+		"name": "default",
+		"attachments": {
+			"右脚": {
+				"右脚": { "x": -89.05, "y": -183.47, "width": 456, "height": 622 }
+			},
+			"头": {
+				"头": { "x": 14.21, "y": -27.27, "width": 327, "height": 318 }
+			},
+			"眼泪": {
+				"眼泪": { "x": 13.59, "y": -80.25, "width": 206, "height": 221 }
+			},
+			"左脚": {
+				"左脚": { "x": -117.82, "y": -158.09, "width": 419, "height": 467 }
+			},
+			"肿": {
+				"肿": { "x": 20.36, "y": 0.17, "width": 168, "height": 105 }
+			}
+		}
+	},
+	{
+		"name": "cz",
+		"bones": [ "眼泪", "肿" ]
+	}
+],
+"animations": {
+	"animation": {
+		"bones": {
+			"右脚": {
+				"translate": [
+					{ "x": -5.89, "y": 22.63 },
+					{ "time": 0.3333, "x": 1.06, "y": -8.1 },
+					{ "time": 0.6667, "x": -5.89, "y": 22.63 }
+				],
+				"scale": [
+					{ "y": 0.754 },
+					{ "time": 0.3333, "y": 1.049 },
+					{ "time": 0.6667, "y": 0.754 }
+				]
+			},
+			"左脚": {
+				"rotate": [
+					{ "curve": "stepped" },
+					{ "time": 0.6667 }
+				],
+				"translate": [
+					{ "y": -11.53 },
+					{ "time": 0.3333, "y": 13.33 },
+					{ "time": 0.6667, "y": -11.53 }
+				],
+				"scale": [
+					{ "y": 0.912 },
+					{ "time": 0.3333, "y": 0.905 },
+					{ "time": 0.6667, "y": 0.912 }
+				]
+			},
+			"头": {
+				"translate": [
+					{},
+					{ "time": 0.3333, "y": 43.93 },
+					{ "time": 0.6667 }
+				]
+			},
+			"眼泪": {
+				"rotate": [
+					{ "curve": "stepped" },
+					{ "time": 0.6667 }
+				],
+				"translate": [
+					{ "curve": "stepped" },
+					{ "time": 0.6667 }
+				],
+				"scale": [
+					{},
+					{ "time": 0.3333, "y": 0.804 },
+					{ "time": 0.6667 }
+				]
+			}
+		}
+	}
+}
+}

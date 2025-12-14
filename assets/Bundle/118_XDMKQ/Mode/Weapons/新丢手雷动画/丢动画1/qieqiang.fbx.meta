@@ -1,0 +1,133 @@
+{
+  "ver": "2.3.13",
+  "importer": "fbx",
+  "imported": true,
+  "uuid": "a77f6e3d-f64b-49e8-932b-b3cb0e93590a",
+  "files": [
+    "__original-animation-0.cconb"
+  ],
+  "subMetas": {
+    "73b7f": {
+      "importer": "gltf-animation",
+      "uuid": "a77f6e3d-f64b-49e8-932b-b3cb0e93590a@73b7f",
+      "displayName": "",
+      "id": "73b7f",
+      "name": "LayDown_SL.animation",
+      "userData": {
+        "gltfIndex": 0,
+        "wrapMode": 0,
+        "sample": 24,
+        "span": {
+          "from": 0,
+          "to": 0.4166666666666667
+        },
+        "events": []
+      },
+      "ver": "1.0.17",
+      "imported": true,
+      "files": [
+        ".cconb"
+      ],
+      "subMetas": {}
+    },
+    "376ba": {
+      "importer": "gltf-animation",
+      "uuid": "a77f6e3d-f64b-49e8-932b-b3cb0e93590a@376ba",
+      "displayName": "",
+      "id": "376ba",
+      "name": "TakeUp_SL.animation",
+      "userData": {
+        "gltfIndex": 0,
+        "wrapMode": 36,
+        "speed": 1,
+        "sample": 24,
+        "span": {
+          "from": 0,
+          "to": 0.4166666666666667
+        },
+        "events": []
+      },
+      "ver": "1.0.17",
+      "imported": true,
+      "files": [
+        ".cconb"
+      ],
+      "subMetas": {}
+    },
+    "6885e": {
+      "importer": "gltf-scene",
+      "uuid": "a77f6e3d-f64b-49e8-932b-b3cb0e93590a@6885e",
+      "displayName": "",
+      "id": "6885e",
+      "name": "qieqiang.prefab",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    }
+  },
+  "userData": {
+    "imageMetas": [],
+    "fbx": {
+      "smartMaterialEnabled": true
+    },
+    "animationImportSettings": [
+      {
+        "name": "Take 001",
+        "duration": 0.8333333134651184,
+        "fps": 30,
+        "splits": [
+          {
+            "name": "LayDown_SL",
+            "from": 0,
+            "to": 0.4166666666666667,
+            "wrapMode": 0,
+            "previousId": "73b7f",
+            "fps": 24
+          },
+          {
+            "name": "TakeUp_SL",
+            "from": 0,
+            "to": 0.4166666666666667,
+            "wrapMode": 36,
+            "speed": 1,
+            "fps": 24,
+            "previousId": "376ba"
+          }
+        ]
+      }
+    ],
+    "lods": {
+      "enable": false,
+      "hasBuiltinLOD": false,
+      "options": [
+        {
+          "screenRatio": 0.25,
+          "faceCount": 1
+        },
+        {
+          "screenRatio": 0.125,
+          "faceCount": 0.25
+        },
+        {
+          "screenRatio": 0.01,
+          "faceCount": 0.1
+        }
+      ]
+    },
+    "assetFinder": {
+      "meshes": [],
+      "skeletons": [],
+      "textures": [],
+      "materials": [],
+      "scenes": [
+        "a77f6e3d-f64b-49e8-932b-b3cb0e93590a@6885e"
+      ]
+    }
+  }
+}
