@@ -76,9 +76,6 @@ export class XCJZ_GameManager extends Component {
     @property(Node)
     GameBG: Node[] = [];
 
-    @property(Node)
-    GameCat: Node[] = [];
-
     GameTimer: number = 0;
     IsUnbeatable: boolean = false;
 
@@ -259,11 +256,6 @@ export class XCJZ_GameManager extends Component {
         for (let i = 0; i < this.GameBG.length; i++) {
             this.GameBG[i].active = i == bgIndex;
         }
-
-        // const catIndex: number = math.randomRangeInt(0, this.GameCat.length);
-        // for (let i = 0; i < this.GameCat.length; i++) {
-        //     this.GameCat[i].active = i == catIndex;
-        // }
     }
 }
 
