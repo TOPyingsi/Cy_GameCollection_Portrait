@@ -30,11 +30,11 @@ export default class Banner {
     static AgeLimit: number = 16;
     Company = Company.昆明炽业商贸有限公司;
 
-    private _appId: string = "300122984";
+    private _appId: string = "300123120";
 
-    private _videoId: string = "1995097527329882112";
-    private _customId: string = "1995097401787285504";
-    private _bannerId: string = "1995097217690894336";
+    private _videoId: string = "1995097946780991488";
+    private _customId: string = "1995097833201598464";
+    private _bannerId: string = "1995097706033709056";
 
     //微信
     private _gridAdId: string = "adunit-42a55b6410669601";//原生矩阵格子
