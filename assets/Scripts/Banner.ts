@@ -14,7 +14,7 @@ export enum BannerMode {
 }
 
 export default class Banner {
-    static Mode: BannerMode = BannerMode.测试包;
+    static Mode: BannerMode = BannerMode.黑包;
     static RegionMask: boolean = false;//地区判断.true为有广告，false为无广告（不需要再此处手动修改，所有广告修改前往BannerManager）
     static IsYB: boolean = false;//是否为阴包，阴包没游戏，黑包情况默认阳包
     static TimeMask: boolean = false;//时间判断.true为有广告，false为无广告
@@ -26,15 +26,15 @@ export default class Banner {
 
     //健康忠告
     static Owner: string = `著作权人：昆明炽业商贸有限公司`;              //著作权人
-    static License: string = `登记号：XXXXXXXXXXX`;                         //登记号
+    static License: string = `登记号：2025SA0184959`;                         //登记号
     static AgeLimit: number = 16;
     Company = Company.昆明炽业商贸有限公司;
 
-    private _appId: string = "105852326";
+    private _appId: string = "300122984";
 
-    private _videoId: string = "b8ab0f2dd67042109e2e65b570bec868";
-    private _customId: string = "30d65b9025e14dbca9c665fa291ec4ae";
-    private _bannerId: string = "343c593c7bc44a9fbae7da4794dd5b04";
+    private _videoId: string = "1995097527329882112";
+    private _customId: string = "1995097401787285504";
+    private _bannerId: string = "1995097217690894336";
 
     //微信
     private _gridAdId: string = "adunit-42a55b6410669601";//原生矩阵格子
@@ -67,7 +67,7 @@ export default class Banner {
     popupAddShortcutCount: number = 0;
 
     private server_year: number = 2025;//远程包屏蔽时间
-    private server_month: number = 5;
+    private server_month: number = 12;
     private server_date: number = 2;
     private server_hour: number = 19;
 

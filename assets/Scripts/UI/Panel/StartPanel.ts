@@ -1,4 +1,4 @@
-import { _decorator, Component, Label, Node, Event, Prefab, Vec2, instantiate, Vec3, tween, v3, director, resources, find, Sprite, SpriteFrame } from 'cc';
+import { _decorator, Component, Label, Node, Event, Prefab, Vec2, instantiate, Vec3, tween, v3, director, resources, find, Sprite, SpriteFrame, Layout } from 'cc';
 import NodeUtil from '../../Framework/Utils/NodeUtil';
 import Banner, { Channel } from '../../Banner';
 import { AudioManager, Audios } from '../../Framework/Managers/AudioManager';
@@ -29,6 +29,9 @@ export default class StartPanel extends Component {
     Buttons: Node | null = null;
     TTButtons: Node | null = null;
     static FirstShow = true;
+
+    @property(Layout)
+    layout: Layout;
 
     protected onLoad(): void {
         this.MoneyLabel = NodeUtil.GetComponent("MoneyLabel", this.node, Label);
@@ -88,6 +91,9 @@ export default class StartPanel extends Component {
         if (DataManager.EnterFirstGame) {
             let data = DataManager.GetDataByNames(SelectGamePanel.SeletGameData[0].Data);
             MoreGamePagePanel.SelectGameData = data;
+        }
+        if(Banner.IsShowServerBundle){
+            this.layout.node.active=true;
         }
     }
 
@@ -165,6 +171,18 @@ export default class StartPanel extends Component {
             case "TTAppMessage":
                 Banner.Instance.ShareDYAppMessage();
                 break;
+                case "StartGameButton-001":
+          let gameData1 =DataManager.GetDataByName(DataManager.GameData[2].gameName)
+         GameManager.Instance.LoadGame(gameData1);
+break;
+ case "StartGameButton-002":
+         let gameData2=DataManager.GetDataByName(DataManager.GameData[3].gameName)
+         GameManager.Instance.LoadGame(gameData2);
+ break;
+ case "StartGameButton-003":
+         let gameData3 = DataManager.GetDataByName(DataManager.GameData[4].gameName)
+          GameManager.Instance.LoadGame(gameData3);
+ break;
         }
     }
 }
