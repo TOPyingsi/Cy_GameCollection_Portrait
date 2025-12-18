@@ -1,4 +1,4 @@
-import { _decorator, Component, Label, Node, Event, Prefab, Vec2, instantiate, Vec3, tween, v3, director, resources, find, Sprite, SpriteFrame, Layout } from 'cc';
+import { _decorator, Component, Label, Node, Event, Prefab, Vec2, instantiate, Vec3, tween, v3, director, resources, find, Sprite, SpriteFrame, Layout, Button } from 'cc';
 import NodeUtil from '../../Framework/Utils/NodeUtil';
 import Banner, { Channel } from '../../Banner';
 import { AudioManager, Audios } from '../../Framework/Managers/AudioManager';
@@ -30,8 +30,14 @@ export default class StartPanel extends Component {
     TTButtons: Node | null = null;
     static FirstShow = true;
 
-    @property(Layout)
-    layout: Layout;
+    @property(Button)
+    b1: Button;
+
+    @property(Button)
+    b2: Button;
+
+    @property(Button)
+    b3: Button;
 
     protected onLoad(): void {
         this.MoneyLabel = NodeUtil.GetComponent("MoneyLabel", this.node, Label);
@@ -92,8 +98,10 @@ export default class StartPanel extends Component {
             let data = DataManager.GetDataByNames(SelectGamePanel.SeletGameData[0].Data);
             MoreGamePagePanel.SelectGameData = data;
         }
-        if(Banner.IsShowServerBundle){
-            this.layout.node.active=true;
+        if(!Banner.IsShowServerBundle){
+            this.b1.node.active=false;
+            this.b2.node.active=false;
+            this.b3.node.active=false;
         }
     }
 
