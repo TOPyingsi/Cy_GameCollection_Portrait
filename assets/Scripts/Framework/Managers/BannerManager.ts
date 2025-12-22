@@ -150,9 +150,9 @@ export class BannerManager extends Component {
     }
     //策略2(王勇VR黑包)
     public StrategyMode2 = {
-        首次主场景策略: [[BannerType.二次原], [BannerType.宝箱, MaskType.时间屏蔽]],
-        游戏开始策略: [[BannerType.宝箱, MaskType.时间屏蔽], [BannerType.原生], [BannerType.Banner]],
-        游戏结束策略: [[BannerType.宝箱, MaskType.时间屏蔽], [BannerType.原生], [BannerType.Banner]],
+        首次主场景策略: [[BannerType.二次原], [MaskType.时间屏蔽]],
+        游戏开始策略: [[MaskType.时间屏蔽], [BannerType.原生], [BannerType.Banner]],
+        游戏结束策略: [[MaskType.时间屏蔽], [BannerType.原生], [BannerType.Banner]],
         弹出窗口策略: [[BannerType.原生]],
         页面转换策略: [],
         返回主页策略: [[BannerType.原生]],
