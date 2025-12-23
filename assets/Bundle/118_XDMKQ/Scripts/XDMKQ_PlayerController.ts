@@ -329,7 +329,7 @@ export class XDMKQ_PlayerController extends Component {
                 this.TargetEnemy = this.GetEnemyController(result.collider.node);
                 if (this.CurWeapon == XDMKQ_WEAPON.步枪 && hitName == "Head_M") {
                     // const dir: Vec3 = result.hitPoint.subtract(this.Muzzle_98K.getWorldPosition());
-                    XDMKQ_BulletManager.Instance.Create98K(this.Muzzle_98K.getWorldPosition(), result.hitPoint);
+                    //XDMKQ_BulletManager.Instance.Create98K(this.Muzzle_98K.getWorldPosition(), result.hitPoint);
                     // XDMKQ_BulletManager.Instance.Create98K(this.Muzzle_98K.getWorldPosition(), dir);
                 } else if (this.TargetEnemy) {
                     this.TargetEnemy.Hit(this.CurWeapon);
