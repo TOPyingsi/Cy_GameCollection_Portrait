@@ -120,7 +120,7 @@ export class XCJZ_MusicItem extends Component {
             IconName = math.clamp(this.Music - 2, 0, 21).toString();
         }
 
-        BundleManager.LoadSpriteFrame(GameManager.GameData.DefaultBundle, `Sprites/Icons/${IconName}`).then((spriteFrame: SpriteFrame) => {
+        BundleManager.LoadSpriteFrame(`122_XCJZ`, `Sprites/Icons/${IconName}`).then((spriteFrame: SpriteFrame) => {
             this.Icon.spriteFrame = spriteFrame;
         });
     }

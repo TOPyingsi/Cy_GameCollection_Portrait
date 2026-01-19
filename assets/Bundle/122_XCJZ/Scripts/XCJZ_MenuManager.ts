@@ -7,6 +7,7 @@ import Banner from 'db://assets/Scripts/Banner';
 import { XCJZ_TodayItem } from './XCJZ_TodayItem';
 import { Panel, UIManager } from 'db://assets/Scripts/Framework/Managers/UIManager';
 import { ProjectEvent, ProjectEventManager } from 'db://assets/Scripts/Framework/Managers/ProjectEventManager';
+import { XCJZ_AudioManager } from './XCJZ_AudioManager';
 const { ccclass, property } = _decorator;
 
 @ccclass('XCJZ_MenuManager')
@@ -155,6 +156,7 @@ export class XCJZ_MenuManager extends Component {
                 })
                 break;
             case "返回主页":
+                XCJZ_AudioManager.Instance.StopMusic();
                 UIManager.ShowPanel(Panel.ReturnPanel);
                 break;
         }

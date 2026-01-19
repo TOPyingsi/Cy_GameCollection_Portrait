@@ -194,7 +194,7 @@ export class XCJZ_GameManager extends Component {
             IconName = math.clamp(XCJZ_GameData.Instance.CurMusic - 2, 0, 21).toString() + "_1";
         }
 
-        BundleManager.LoadSpriteFrame(GameManager.GameData.DefaultBundle, `Sprites/Icons/${IconName}`).then((spriteFrame: SpriteFrame) => {
+        BundleManager.LoadSpriteFrame(`122_XCJZ`, `Sprites/Icons/${IconName}`).then((spriteFrame: SpriteFrame) => {
             this.Icon.getComponent(Sprite).spriteFrame = spriteFrame;
         });
     }

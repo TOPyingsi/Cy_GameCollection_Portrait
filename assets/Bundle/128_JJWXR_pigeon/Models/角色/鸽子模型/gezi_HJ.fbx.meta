@@ -1,0 +1,189 @@
+{
+  "ver": "2.3.13",
+  "importer": "fbx",
+  "imported": true,
+  "uuid": "e1ad3c7b-eabc-4805-954e-63344d680872",
+  "files": [
+    "__original-animation-0.cconb"
+  ],
+  "subMetas": {
+    "db573": {
+      "importer": "gltf-mesh",
+      "uuid": "e1ad3c7b-eabc-4805-954e-63344d680872@db573",
+      "displayName": "",
+      "id": "db573",
+      "name": "polySurface2.mesh",
+      "userData": {
+        "gltfIndex": 0,
+        "triangleCount": 5546
+      },
+      "ver": "1.1.1",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "73b7f": {
+      "importer": "gltf-animation",
+      "uuid": "e1ad3c7b-eabc-4805-954e-63344d680872@73b7f",
+      "displayName": "",
+      "id": "73b7f",
+      "name": "Take 001.animation",
+      "userData": {
+        "gltfIndex": 0,
+        "wrapMode": 2,
+        "sample": 24,
+        "span": {
+          "from": 0.125,
+          "to": 1.2916666269302368
+        },
+        "events": [],
+        "speed": 2
+      },
+      "ver": "1.0.17",
+      "imported": true,
+      "files": [
+        ".cconb"
+      ],
+      "subMetas": {}
+    },
+    "438fe": {
+      "importer": "gltf-skeleton",
+      "uuid": "e1ad3c7b-eabc-4805-954e-63344d680872@438fe",
+      "displayName": "",
+      "id": "438fe",
+      "name": "UnnamedSkeleton.skeleton",
+      "userData": {
+        "gltfIndex": 0,
+        "jointsLength": 26
+      },
+      "ver": "1.0.1",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "d20e9": {
+      "importer": "texture",
+      "uuid": "e1ad3c7b-eabc-4805-954e-63344d680872@d20e9",
+      "displayName": "",
+      "id": "d20e9",
+      "name": "file1.texture",
+      "userData": {
+        "wrapModeS": "repeat",
+        "wrapModeT": "repeat",
+        "minfilter": "linear",
+        "magfilter": "linear",
+        "mipfilter": "none",
+        "anisotropy": 0,
+        "isUuid": false,
+        "imageUuidOrDatabaseUri": "db://assets/Bundle/128_JJWXR_pigeon/Models/角色/鸽子模型/1001_Base_color.jpg"
+      },
+      "ver": "1.0.22",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "0b7b5": {
+      "importer": "gltf-material",
+      "uuid": "e1ad3c7b-eabc-4805-954e-63344d680872@0b7b5",
+      "displayName": "",
+      "id": "0b7b5",
+      "name": "phong1.material",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "2d78b": {
+      "importer": "gltf-scene",
+      "uuid": "e1ad3c7b-eabc-4805-954e-63344d680872@2d78b",
+      "displayName": "",
+      "id": "2d78b",
+      "name": "gezi_HJ.prefab",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    }
+  },
+  "userData": {
+    "imageMetas": [
+      {
+        "name": "file1",
+        "uri": "db://assets/Bundle/128_JJWXR_pigeon/Models/角色/鸽子模型/1001_Base_color.jpg"
+      }
+    ],
+    "fbx": {
+      "smartMaterialEnabled": true
+    },
+    "animationImportSettings": [
+      {
+        "name": "Take 001",
+        "duration": 1.2916666269302368,
+        "fps": 30,
+        "splits": [
+          {
+            "name": "Take 001",
+            "from": 0.125,
+            "to": 1.2916666269302368,
+            "wrapMode": 2,
+            "previousId": "73b7f",
+            "fps": 24,
+            "speed": 2
+          }
+        ]
+      }
+    ],
+    "lods": {
+      "enable": false,
+      "hasBuiltinLOD": false,
+      "options": [
+        {
+          "screenRatio": 0.25,
+          "faceCount": 1
+        },
+        {
+          "screenRatio": 0.125,
+          "faceCount": 0.25
+        },
+        {
+          "screenRatio": 0.01,
+          "faceCount": 0.1
+        }
+      ]
+    },
+    "assetFinder": {
+      "meshes": [
+        "e1ad3c7b-eabc-4805-954e-63344d680872@db573"
+      ],
+      "skeletons": [
+        "e1ad3c7b-eabc-4805-954e-63344d680872@438fe"
+      ],
+      "textures": [
+        "e1ad3c7b-eabc-4805-954e-63344d680872@d20e9"
+      ],
+      "materials": [
+        "e1ad3c7b-eabc-4805-954e-63344d680872@0b7b5"
+      ],
+      "scenes": [
+        "e1ad3c7b-eabc-4805-954e-63344d680872@2d78b"
+      ]
+    }
+  }
+}
