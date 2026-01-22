@@ -29,6 +29,8 @@ export default class StartPanel extends Component {
     Buttons: Node | null = null;
     TTButtons: Node | null = null;
     static FirstShow = true;
+    public IndieMoreGame: string[] = ["爆炸豆挑战", "逆转空间", "兄弟们开枪", "箭头乐消除"];//独立游戏配置
+    private static IndieSelectID: number = 0;//独立游戏默认选中
 
     protected onLoad(): void {
         this.MoneyLabel = NodeUtil.GetComponent("MoneyLabel", this.node, Label);
@@ -89,6 +91,16 @@ export default class StartPanel extends Component {
             let data = DataManager.GetDataByNames(SelectGamePanel.SeletGameData[0].Data);
             MoreGamePagePanel.SelectGameData = data;
         }
+        if (!GameManager.IsIndieGame) {//非独立游戏关闭更多模式
+            this.node.getChildByName("MoreGame").active = false;
+        } else {
+            if (!Banner.TimeMask) {
+                this.node.getChildByPath("MoreGame/按钮").active = false;
+            }
+            this.IndieInit();
+            //独立游戏情况刷新界面
+            this.IndieShow();
+        }
     }
 
     SetButtonState(channel: Channel) {
@@ -106,7 +118,8 @@ export default class StartPanel extends Component {
         switch (event.target.name) {
             case "StartGameButton":
                 if (GameManager.IsIndieGame) {
-                    UIManager.ShowLoadingPanel(GameManager.GameData.startScene, GameManager.GameData.Bundles);
+                    let data = DataManager.GetDataByName(this.IndieMoreGame[StartPanel.IndieSelectID]);
+                    GameManager.Instance.LoadGame(data);
                 } else {
                     if (Banner.IsShowServerBundle) {
                         if (DataManager.EnterFirstGame) {
@@ -129,6 +142,7 @@ export default class StartPanel extends Component {
                 if (Banner.IsWz) {
                     Banner.Instance.ShowCustomAd();//万总华为APK-点击开始游戏弹原生
                 }
+
                 break;
 
             case "PrivacyButton":
@@ -165,6 +179,37 @@ export default class StartPanel extends Component {
             case "TTAppMessage":
                 Banner.Instance.ShareDYAppMessage();
                 break;
+            case "更多模式0":
+            case "更多模式1":
+            case "更多模式2":
+            case "更多模式3":
+                this.MoreGameButtomClick(event.target.name.charAt(4));
+                break;
         }
+    }
+
+
+
+    //更多模式按钮点击
+    MoreGameButtomClick(id: number) {
+        StartPanel.IndieSelectID = id;
+        this.IndieShow();
+    }
+
+    //刷新独立游戏
+    IndieShow() {
+        this.node.getChildByPath("MoreGame/按钮").children.forEach((element, index) => {
+            element.getChildByName("按钮选中").active = index == StartPanel.IndieSelectID;
+        });
+        resources.load("Sprites/IndieGameSprites/" + this.IndieMoreGame[StartPanel.IndieSelectID] + "/spriteFrame", SpriteFrame, (err, spriteFrame) => {
+            this.node.getChildByPath("MoreGame/图像/Mask/图").getComponent(Sprite).spriteFrame = spriteFrame;
+        });
+    }
+    //初始化
+    IndieInit() {
+        this.node.getChildByPath("MoreGame/按钮").children.forEach((element, index) => {
+            element.getChildByName("txt").getComponent(Label).string = this.IndieMoreGame[index];
+        });
+
     }
 }
