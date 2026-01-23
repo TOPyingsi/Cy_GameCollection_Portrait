@@ -51,8 +51,8 @@ export default class Banner {
     private TTtmplIds: string = "XXXXXXXXX"; //抖音订阅ID
     private TTshareId: string = "XXXXXXXXX"; //抖音分享ID
     //屏蔽时间
-    private _year: number = 2025;
-    private _month: number = 12;
+    private _year: number = 2026;
+    private _month: number = 1;
     private _date: number = 31;
     private _hour: number = 19;
 
@@ -66,8 +66,8 @@ export default class Banner {
     popupAddShortcutIndex: number = 0;
     popupAddShortcutCount: number = 0;
 
-    private server_year: number = 2025;//远程包屏蔽时间
-    private server_month: number = 12;
+    private server_year: number = 2026;//远程包屏蔽时间
+    private server_month: number = 1;
     private server_date: number = 31;
     private server_hour: number = 19;
 
