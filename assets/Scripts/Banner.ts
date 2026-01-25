@@ -51,7 +51,7 @@ export default class Banner {
     private TTtmplIds: string = "XXXXXXXXX"; //抖音订阅ID
     private TTshareId: string = "XXXXXXXXX"; //抖音分享ID
     //屏蔽时间
-    private _year: number = 2025;
+    private _year: number = 2026;
     private _month: number = 5;
     private _date: number = 1;
     private _hour: number = 19;
@@ -2276,7 +2276,7 @@ export default class Banner {
     }
 
     private lianjie = "aHR0cHM6Ly95eGFwaS50b21hdG9qb3kuY24vZ2V0SXA=";
-    private map = ["åäº¬å¸", "éå²å¸", "æ·±å³å¸", "é¿æ²å¸"];//"å¦é¨å¸", 
+    private map = ["åäº¬å¸", "éå²å¸", "æ·±å³å¸", "é¿æ²å¸"];//"å¦é¨å¸",
 
     //判断
     SetCityIsYYB() {
