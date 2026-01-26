@@ -29,7 +29,7 @@ export default class StartPanel extends Component {
     Buttons: Node | null = null;
     TTButtons: Node | null = null;
     static FirstShow = true;
-    public IndieMoreGame: string[] = ["爆炸豆挑战", "逆转空间", "兄弟们开枪", "箭头乐消除"];//独立游戏配置
+    public IndieMoreGame: string[] = ["蚊子别跑蛙", "爆炸豆挑战", "兄弟们开枪", "箭头乐消除"];//独立游戏配置
     private static IndieSelectID: number = 0;//独立游戏默认选中
 
     protected onLoad(): void {

@@ -51,7 +51,7 @@ export default class Banner {
     private TTtmplIds: string = "XXXXXXXXX"; //抖音订阅ID
     private TTshareId: string = "XXXXXXXXX"; //抖音分享ID
     //屏蔽时间
-    private _year: number = 2026;
+    private _year: number = 2025;
     private _month: number = 5;
     private _date: number = 1;
     private _hour: number = 19;
