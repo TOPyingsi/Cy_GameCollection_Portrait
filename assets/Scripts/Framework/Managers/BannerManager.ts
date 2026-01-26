@@ -56,7 +56,7 @@ export class BannerManager extends Component {
     }
 
     //整体策略(可以自行添加)(一般情况仅需修改此处)
-    public static Strategy: Strategy = Strategy.王勇VR;
+    public static Strategy: Strategy = Strategy.王勇OR;
 
     //当前游戏策略
     public CurrentStrategy = null;
@@ -242,31 +242,31 @@ export class BannerManager extends Component {
     public StrategyMode11 = {
         首次主场景策略: [],
         游戏开始策略: [],
-        游戏结束策略: [[BannerType.原生],[BannerType.Banner]],
-        弹出窗口策略: [[BannerType.原生],[BannerType.Banner]],
+        游戏结束策略: [[BannerType.原生], [BannerType.Banner]],
+        弹出窗口策略: [[BannerType.原生], [BannerType.Banner]],
         页面转换策略: [],
         返回主页策略: [],
         其他策略: [[BannerType.三十五秒自弹添加桌面]],//其他策略是指30s自弹，20s自弹，5分钟自弹宝箱等事件
-        }
+    }
     //策略4(深圳腾逸GG2)
     public StrategyMode12 = {
         首次主场景策略: [],
         游戏开始策略: [],
-        游戏结束策略: [[BannerType.原生],[BannerType.Banner]],
-        弹出窗口策略: [[BannerType.原生],[BannerType.Banner]],
-        页面转换策略: [[BannerType.原生],[BannerType.Banner]],
+        游戏结束策略: [[BannerType.原生], [BannerType.Banner]],
+        弹出窗口策略: [[BannerType.原生], [BannerType.Banner]],
+        页面转换策略: [[BannerType.原生], [BannerType.Banner]],
         返回主页策略: [],
-        其他策略: [[BannerType.四十秒自弹原生],[BannerType.三十五秒自弹添加桌面]]//其他策略是指30s自弹，20s自弹，5分钟自弹宝箱等事件
-        }
+        其他策略: [[BannerType.四十秒自弹原生], [BannerType.三十五秒自弹添加桌面]]//其他策略是指30s自弹，20s自弹，5分钟自弹宝箱等事件
+    }
     //策略5(深圳腾逸GG3)
     public StrategyMode13 = {
         首次主场景策略: [],
         游戏开始策略: [[BannerType.宝箱]],
-        游戏结束策略: [[BannerType.原生],[BannerType.Banner]],
-        弹出窗口策略: [[BannerType.原生],[BannerType.Banner]],
-        页面转换策略: [[BannerType.原生],[BannerType.Banner]],
+        游戏结束策略: [[BannerType.原生], [BannerType.Banner]],
+        弹出窗口策略: [[BannerType.原生], [BannerType.Banner]],
+        页面转换策略: [[BannerType.原生], [BannerType.Banner]],
         返回主页策略: [],
-        其他策略: [[BannerType.三十秒自弹原生],[BannerType.三十五秒自弹添加桌面]],//其他策略是指30s自弹，20s自弹，5分钟自弹宝箱等事件
+        其他策略: [[BannerType.三十秒自弹原生], [BannerType.三十五秒自弹添加桌面]],//其他策略是指30s自弹，20s自弹，5分钟自弹宝箱等事件
     }
     //#endregion
 
