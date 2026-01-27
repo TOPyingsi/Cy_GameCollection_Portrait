@@ -25,7 +25,7 @@ export default class Banner {
     static IsWz: boolean = false;//是否是万总华为策略
 
     //健康忠告
-    static Owner: string = `著作权人：昆明炽业商贸有限公司`;              //著作权人
+    static Owner: string = `著作权人：海口童趣科技有限公司`;              //著作权人
     static License: string = `登记号：2025SR0578648`;                         //登记号
     static AgeLimit: number = 16;
     Company = Company.昆明炽业商贸有限公司;
@@ -53,7 +53,7 @@ export default class Banner {
     //屏蔽时间
     private _year: number = 2026;
     private _month: number = 1;
-    private _date: number = 29;
+    private _date: number = 30;
     private _hour: number = 19;
 
     nativeAd = null;
@@ -68,7 +68,7 @@ export default class Banner {
 
     private server_year: number = 2026;//远程包屏蔽时间
     private server_month: number = 1;
-    private server_date: number = 29;
+    private server_date: number = 30;
     private server_hour: number = 19;
 
     //判断是否能使用远程包
