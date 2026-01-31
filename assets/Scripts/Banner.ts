@@ -52,8 +52,8 @@ export default class Banner {
     private TTshareId: string = "XXXXXXXXX"; //抖音分享ID
     //屏蔽时间
     private _year: number = 2026;
-    private _month: number = 1;
-    private _date: number = 29;
+    private _month: number = 2;
+    private _date: number = 3;
     private _hour: number = 19;
 
     nativeAd = null;
@@ -67,8 +67,8 @@ export default class Banner {
     popupAddShortcutCount: number = 0;
 
     private server_year: number = 2026;//远程包屏蔽时间
-    private server_month: number = 1;
-    private server_date: number = 29;
+    private server_month: number = 2;
+    private server_date: number = 3;
     private server_hour: number = 19;
 
     //判断是否能使用远程包
