@@ -47,25 +47,27 @@ export class BundleManager extends Component {
         const bundles = await DataManager.GetBundles();
         this.LoadBundles(bundles);
     }
-
+    public static IsGoinGame: boolean = false;
     SuccessCallback() {
-        if (Banner.IsYB) {
-            if (BundleManager.LoadBundleDone && BundleManager.AgreePolicy) {
-                console.log("所有资源加载完成，进入游戏场景");
-                director.loadScene("YB");
-            }
-        } else
-            if (BundleManager.LoadBundleDone && BundleManager.AgreePolicy) {
-                console.log("所有资源加载完成，进入游戏场景");
-                GameManager.GameData = DataManager.GetStartGameData();
-                GameManager.IsIndieGame = DataManager.IsIndieGameData(GameManager.GameData);
-                console.log(`是否为独立游戏：${GameManager.IsIndieGame}`);
-                this.scheduleOnce(() => {
+        this.scheduleOnce(() => {
+            if (BundleManager.IsGoinGame == true) return;
+            if (Banner.IsYB) {
+                if (BundleManager.LoadBundleDone && BundleManager.AgreePolicy) {
+                    console.log("所有资源加载完成，进入游戏场景");
+                    BundleManager.IsGoinGame = true;
+                    director.loadScene("YB");
+                }
+            } else
+                if (BundleManager.LoadBundleDone && BundleManager.AgreePolicy) {
+                    console.log("所有资源加载完成，进入游戏场景");
+                    GameManager.GameData = DataManager.GetStartGameData();
+                    GameManager.IsIndieGame = DataManager.IsIndieGameData(GameManager.GameData);
+                    console.log(`是否为独立游戏：${GameManager.IsIndieGame}`);
+                    BundleManager.IsGoinGame = true;
                     director.loadScene(GameManager.StartScene);
-                }, 1);
-            }
+                }
+        }, 1);
     }
-
     LoadBundles(bundleNames: string[]) {
         const bundlePromises = bundleNames.map(name => {
             return new Promise((resolve, reject) => {

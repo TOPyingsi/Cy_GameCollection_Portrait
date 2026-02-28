@@ -1,8 +1,8 @@
 import { _decorator, Component, director, Node, Sprite, SpriteFrame } from 'cc';
 const { ccclass, property } = _decorator;
 
-@ccclass('objectController')
-export class objectController extends Component {
+@ccclass('YYB_objectController')
+export class YYB_objectController extends Component {
     @property(Boolean)
     canCross: boolean = true;
 
@@ -10,10 +10,10 @@ export class objectController extends Component {
     sfs: SpriteFrame[] = [];
 
 
-    protected onLoad(): void {
-        let idx = Number(director.getScene().name[director.getScene().name.length - 1]);
+    protected start(): void {
+        let idx = 4;
         console.log(director.getScene().name);
-        this.getComponentInChildren(Sprite).spriteFrame = this.sfs[idx - 1];
+        this.getComponentInChildren(Sprite).spriteFrame = this.sfs[0];
 
     }
 }
